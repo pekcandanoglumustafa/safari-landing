@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { PKGS } from "@/data";
-const SITE = "https://www.nergistour.com";
+const SITE = "https://www.sidequadbuggy.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: SITE, changeFrequency: "weekly", priority: 1 },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { CONTACT } from "@/data";
 
-const SITE = "https://www.nergistour.com";
+const SITE = "https://www.sidequadbuggy.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: "Quad & Buggy Safari Antalya | Side Manavgat — Otelden Alma Dahil",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 const jsonLd = {
-  "@context":"https://schema.org","@type":"LocalBusiness",name:"Nergis Tour — Quad & Buggy Safari",
+  "@context":"https://schema.org","@type":"LocalBusiness",name:"Side Quad Buggy Safari",
   telephone: CONTACT.phoneIntl, areaServed:["Antalya","Side","Manavgat","Belek","Alanya"],
   address:{"@type":"PostalAddress",addressLocality:"Manavgat",addressRegion:"Antalya",addressCountry:"TR"},
   aggregateRating:{"@type":"AggregateRating",ratingValue:"4.9",reviewCount:"120"},

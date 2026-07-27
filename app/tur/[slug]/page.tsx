@@ -43,7 +43,7 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
       <header className="sticky top-0 z-40 bg-navy/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <Link href="/" className="rounded-lg bg-white px-2.5 py-1.5">
-            <Image src="/logo.png" alt="Nergis Tour" width={120} height={30} />
+            <Image src="/logo.png" alt="Side Quad Buggy Safari" width={120} height={30} />
           </Link>
           <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
         </div>
