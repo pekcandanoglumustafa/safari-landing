@@ -49,11 +49,11 @@ export default function Home() {
               Hemen Rezervasyon
             </a>
           </div>
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/90">
-            <span>✔ Otelden ücretsiz transfer</span>
-            <span>✔ Ödeme tur günü</span>
-            <span>✔ Ehliyet gerekmez</span>
-            <span>✔ Tüm ekipman dahil</span>
+          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white">
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Otelden ücretsiz transfer</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Ödeme tur günü</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Ehliyet gerekmez</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Tüm ekipman dahil</span>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PKGS, getPkg, CONTACT, toTL } from "@/data";
+import { SEO_CONTENT, FAQ_FULL } from "@/content";
 
 export function generateStaticParams() {
   return PKGS.map((p) => ({ slug: p.slug }));
@@ -25,6 +26,8 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
   const p = getPkg(slug);
   if (!p) notFound();
 
+  const seo = SEO_CONTENT[slug];
+  const faqList = FAQ_FULL[slug] ?? p.faq;
   const wa = `${CONTACT.whatsapp}?text=${encodeURIComponent(`Merhaba, "${p.name}" için rezervasyon yapmak istiyorum. Tarih ve kişi sayısı: `)}`;
   const jsonLd = {
     "@context": "https://schema.org",
@@ -32,7 +35,7 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
       { "@type": "Product", name: `${p.name} Antalya`, description: p.intro, image: p.gallery,
         offers: { "@type": "Offer", price: p.price, priceCurrency: "EUR", availability: "https://schema.org/InStock" },
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "120" } },
-      { "@type": "FAQPage", mainEntity: p.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+      { "@type": "FAQPage", mainEntity: faqList.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
     ],
   };
 
@@ -91,7 +94,16 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
 
       <div className="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:grid-cols-[1fr_300px]">
         <div>
-          <p className="text-lg leading-relaxed text-ink/85">{p.intro}</p>
+          <p className="text-lg leading-relaxed text-ink/85">{seo?.intro ?? p.intro}</p>
+
+          {seo?.sections.map((sec) => (
+            <section key={sec.h} className="mt-8">
+              <h2 className="display text-xl font-extrabold text-navy md:text-2xl">{sec.h}</h2>
+              {sec.p.map((para, i) => (
+                <p key={i} className="mt-2 leading-relaxed text-ink/80">{para}</p>
+              ))}
+            </section>
+          ))}
 
           <h2 className="display mt-10 text-2xl font-extrabold text-navy">Öne Çıkanlar</h2>
           <ul className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -118,7 +130,7 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
 
           <h2 className="display mt-10 text-2xl font-extrabold text-navy">Sık Sorulanlar</h2>
           <div className="mt-4 space-y-3">
-            {p.faq.map((f) => (
+            {faqList.map((f) => (
               <details key={f.q} className="group rounded-xl bg-white p-4 ring-1 ring-black/5">
                 <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-navy">
                   {f.q}<span className="ml-4 text-orange transition group-open:rotate-45">+</span>
