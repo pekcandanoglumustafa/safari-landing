@@ -45,14 +45,14 @@ export const PKGS: Pkg[] = [
     slug: "family-buggy-safari",
     name: "Family Buggy Safari",
     tagline: "Tüm aile tek buggy'de — 4 kişilik güvenli macera",
-    price: 75, duration: "3-4 saat · Her gün",
+    price: 40, duration: "3-4 saat · Her gün",
     hero: "/img/13.jpg",
     gallery: ["/img/13.jpg","/img/14.jpg","/img/00.jpg","/img/07.jpg","/img/06.jpg","/img/03.jpg"],
-    intro: "Ailece maceraya çıkmak isteyenler için 4 kişilik geniş kafesli buggy. Anne, baba ve çocuklar aynı araçta, güvenli kafes içinde çamur ve tozun tadını çıkarıyor. Fiyat araç başıdır — tüm aile bu ücrete dahil.",
+    intro: "Ailece maceraya çıkmak isteyenler için 4 kişilik geniş kafesli buggy. Anne, baba ve çocuklar aynı araçta, güvenli kafes içinde çamur ve tozun tadını çıkarıyor. Fiyat araç başıdır — tüm aile tek ücrete dahil.",
     highlights: ["4 kişilik tek araç","Aile başı sabit fiyat","Kafesli, güvenli tasarım","Çocuklar için uygun (6+ yaş)","Otelden ücretsiz alma-bırakma"],
     includes: ["Otelden alma-bırakma","4 kişilik buggy","Kasklar","Rehberlik","Sigorta"],
     program: [{t:"Alınış",x:"Ailecek otelinizden alınıyorsunuz"},{t:"Brifing",x:"Güvenlik eğitimi ve araç tanıtımı"},{t:"Parkur",x:"Aile temposunda çamur ve toz parkuru"},{t:"Dönüş",x:"Mola sonrası otele bırakış"}],
-    faq: [{q:"Fiyat kişi başı mı?",a:"Hayır, 75 € araç başıdır — 4 kişilik ailenin tamamı bu ücrete dahildir."},{q:"Çocuk yaş sınırı?",a:"Kafesli araç ve emniyet kemeriyle 6 yaş üzeri çocuklar rahatça katılabilir."},{q:"Kim kullanır?",a:"Ebeveyn kullanır, çocuklar yanında güvenle oturur. Kafes ve kemer tam koruma sağlar."}],
+    faq: [{q:"Fiyat kişi başı mı?",a:"Hayır, 40 € araç başıdır — 4 kişilik ailenin tamamı bu ücrete dahildir."},{q:"Çocuk yaş sınırı?",a:"Kafesli araç ve emniyet kemeriyle 6 yaş üzeri çocuklar rahatça katılabilir."},{q:"Kim kullanır?",a:"Ebeveyn kullanır, çocuklar yanında güvenle oturur. Kafes ve kemer tam koruma sağlar."}],
   },
 ];
 export const getPkg = (s: string) => PKGS.find(p => p.slug === s);
