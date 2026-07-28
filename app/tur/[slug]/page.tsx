@@ -4,6 +4,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PKGS, getPkg, CONTACT, toTL } from "@/data";
 import { SEO_CONTENT, FAQ_FULL } from "@/content";
+import Gallery from "@/app/Gallery";
+import LangSwitcher from "@/app/LangSwitcher";
+import FloatingWhats from "@/app/FloatingWhats";
 
 export function generateStaticParams() {
   return PKGS.map((p) => ({ slug: p.slug }));
@@ -48,7 +51,10 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
           <Link href="/" className="rounded-lg bg-white px-2.5 py-1.5">
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={120} height={30} />
           </Link>
-          <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
+          <div className="flex items-center gap-2">
+            <LangSwitcher />
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
+          </div>
         </div>
       </header>
 
@@ -66,31 +72,8 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
         </div>
       </div>
 
-      {/* GALERİ */}
-      {/* Masaüstü: ızgara */}
-      <div className="mx-auto hidden max-w-6xl px-4 pt-6 md:block">
-        <div className="grid gap-2 overflow-hidden rounded-3xl md:grid-cols-4 md:grid-rows-2">
-          <div className="relative md:col-span-2 md:row-span-2 md:min-h-[400px]">
-            <Image src={p.gallery[0]} alt={p.name} fill sizes="50vw" className="object-cover" priority />
-          </div>
-          {p.gallery.slice(1, 5).map((src, i) => (
-            <div key={i} className="relative aspect-[4/3]">
-              <Image src={src} alt={`${p.name} ${i + 2}`} fill sizes="25vw" className="object-cover" />
-            </div>
-          ))}
-        </div>
-      </div>
-      {/* Mobil: yatay kaydırmalı galeri — tüm fotoğraflar */}
-      <div className="md:hidden">
-        <div className="flex snap-x snap-mandatory gap-2 overflow-x-auto px-4 pt-4 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {p.gallery.map((src, i) => (
-            <div key={i} className="relative aspect-[4/3] w-[85%] shrink-0 snap-center overflow-hidden rounded-2xl">
-              <Image src={src} alt={`${p.name} ${i + 1}`} fill sizes="85vw" className="object-cover" priority={i === 0} />
-            </div>
-          ))}
-        </div>
-        <p className="px-4 pb-2 text-center text-xs text-ink/50">← Kaydırarak tüm fotoğrafları görün →</p>
-      </div>
+      {/* GALERİ — oklar, otomatik geçiş, büyütme */}
+      <Gallery images={p.gallery} name={p.name} />
 
       <div className="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:grid-cols-[1fr_300px]">
         <div>
@@ -155,6 +138,8 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
           </div>
         </aside>
       </div>
+
+      <FloatingWhats />
 
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 md:hidden">
         <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-navy py-4 font-bold text-white">📞 Ara</a>

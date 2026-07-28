@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PKGS, CONTACT, toTL } from "@/data";
+import LangSwitcher from "@/app/LangSwitcher";
+import FloatingWhats from "@/app/FloatingWhats";
 
 export default function Home() {
   return (
@@ -17,10 +19,13 @@ export default function Home() {
           <span className="rounded-lg bg-white px-2.5 py-1.5">
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={132} height={33} priority />
           </span>
-          <a href={CONTACT.whatsapp} target="_blank" rel="noopener"
-             className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">
-            WhatsApp
-          </a>
+          <div className="flex items-center gap-2">
+            <LangSwitcher />
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener"
+               className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">
+              WhatsApp
+            </a>
+          </div>
         </header>
 
         <div className="relative mx-auto max-w-6xl px-4 pb-24 pt-10 md:pb-32 md:pt-16">
@@ -124,6 +129,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <FloatingWhats />
 
       {/* Sabit mobil CTA */}
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 md:hidden">
