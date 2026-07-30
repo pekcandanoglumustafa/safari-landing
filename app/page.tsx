@@ -21,7 +21,7 @@ export default function Home() {
           </span>
           <div className="flex items-center gap-2">
             <LangSwitcher />
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener"
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
                className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">
               WhatsApp
             </a>
@@ -34,22 +34,22 @@ export default function Home() {
               <span className="display text-base font-extrabold text-orange">4.9</span>
               <span className="text-orange">★★★★★</span> Google
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange px-3.5 py-1.5 text-sm font-bold text-white shadow-lg">
+            <span className="blink inline-flex items-center gap-1.5 rounded-full bg-orange px-3.5 py-1.5 text-sm font-bold text-white shadow-lg">
               ✔ A Grubu Acente · 9030
             </span>
           </div>
           <h1 className="display max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
-            Antalya&apos;da Çamur, Toz ve <span className="text-orange">Tam Gaz Adrenalin</span>
+            Side&apos;de Çamur, Toz ve <span className="glow text-orange">Tam Gaz Adrenalin</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/90">
-            Quad, Buggy ve Aile Buggy safari — Toros eteklerinde 2 saatlik off-road macera.
+            Quad, Buggy ve Aile Buggy safari — Side ve Manavgat çıkışlı, Toros eteklerinde 2 saatlik off-road macera.
             Otelden ücretsiz alma-bırakma, ödeme tur günü. Ehliyet gerekmez!
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#paketler" className="pulse rounded-full bg-orange px-7 py-3.5 font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-orange-dark">
               Paketleri Gör
             </a>
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener"
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
                className="rounded-full bg-wa px-7 py-3.5 font-bold text-white hover:bg-wa-dark">
               Hemen Rezervasyon
             </a>
@@ -59,6 +59,7 @@ export default function Home() {
             <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Ödeme tur günü</span>
             <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Ehliyet gerekmez</span>
             <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Tüm ekipman dahil</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Gizli ödeme yok</span>
           </div>
         </div>
       </section>
@@ -119,7 +120,7 @@ export default function Home() {
         <h2 className="display text-3xl font-extrabold text-navy md:text-4xl">Maceraya Hazır mısın?</h2>
         <p className="mx-auto mt-3 max-w-md text-ink/70">Hangi paket, hangi gün, kaç kişi — WhatsApp&apos;tan yaz, yerini ayırt.</p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
-          <a href={CONTACT.whatsapp} target="_blank" rel="noopener"
+          <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
              className="rounded-full bg-wa px-7 py-3.5 font-bold text-white hover:bg-wa-dark">
             WhatsApp: {CONTACT.phoneDisplay}
           </a>
@@ -130,12 +131,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ALT MENÜ */}
+      <footer className="border-t border-black/5 bg-white py-8">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-4 text-sm font-semibold text-navy">
+          <Link href="/sss" className="hover:text-orange">Sıkça Sorulan Sorular</Link>
+          <Link href="/iletisim" className="hover:text-orange">İletişim & Rezervasyon</Link>
+          <span className="text-ink/50">TÜRSAB 9030 · Sonnenklar Reisen Turizm</span>
+        </div>
+      </footer>
+
       <FloatingWhats />
 
       {/* Sabit mobil CTA */}
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 md:hidden">
-        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-navy py-4 font-bold text-white">📞 Ara</a>
-        <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">WhatsApp</a>
+        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-[#e01f26] py-4 font-bold text-white">📞 Ara</a>
+        <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">WhatsApp</a>
       </div>
     </>
   );

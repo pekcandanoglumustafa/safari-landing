@@ -53,7 +53,7 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
           </Link>
           <div className="flex items-center gap-2">
             <LangSwitcher />
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
           </div>
         </div>
       </header>
@@ -111,7 +111,7 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
           <h2 className="display mt-10 text-2xl font-extrabold text-navy">Fiyata Dahil</h2>
           <ul className="mt-4 space-y-2">{p.includes.map((i) => <li key={i} className="text-ink/85">✓ {i}</li>)}</ul>
 
-          <h2 className="display mt-10 text-2xl font-extrabold text-navy">Sık Sorulanlar</h2>
+          <h2 className="display mt-10 text-2xl font-extrabold text-navy">Tur Detayları</h2>
           <div className="mt-4 space-y-3">
             {faqList.map((f) => (
               <details key={f.q} className="group rounded-xl bg-white p-4 ring-1 ring-black/5">
@@ -132,7 +132,7 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
               <span className="display text-3xl font-extrabold text-orange">€{p.price}</span>
             </p>
             <p className="text-sm font-semibold text-ink/70">≈ {toTL(p.price)} ₺</p>
-            <a href={wa} target="_blank" rel="noopener" className="mt-4 block rounded-full bg-wa py-3.5 text-center font-bold text-white hover:bg-wa-dark">WhatsApp&apos;tan Rezervasyon</a>
+            <a href={wa} target="_blank" rel="noopener" data-wa="1" className="mt-4 block rounded-full bg-wa py-3.5 text-center font-bold text-white hover:bg-wa-dark">WhatsApp&apos;tan Rezervasyon</a>
             <a href={`tel:${CONTACT.phoneIntl}`} className="mt-2 block rounded-full bg-navy py-3.5 text-center font-bold text-white hover:bg-deep">Ara: {CONTACT.phoneDisplay}</a>
             <p className="mt-3 text-center text-xs text-ink/70">Ön ödeme yok · Ödeme tur günü · Otelden ücretsiz transfer</p>
           </div>
@@ -142,8 +142,8 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
       <FloatingWhats />
 
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 md:hidden">
-        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-navy py-4 font-bold text-white">📞 Ara</a>
-        <a href={wa} target="_blank" rel="noopener" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">WhatsApp</a>
+        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-[#e01f26] py-4 font-bold text-white">📞 Ara</a>
+        <a href={wa} target="_blank" rel="noopener" data-wa="1" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">WhatsApp</a>
       </div>
     </article>
   );

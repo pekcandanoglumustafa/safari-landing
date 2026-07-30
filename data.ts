@@ -1,7 +1,7 @@
 export const CONTACT = {
-  phoneDisplay: "0542 744 01 01",
-  phoneIntl: "+905427440101",
-  whatsapp: "https://wa.me/905427440101",
+  phoneDisplay: "0507 617 17 77",
+  phoneIntl: "+905076171777",
+  whatsapp: "https://wa.me/905076171777",
 };
 export const EUR_TRY = 54;
 export const toTL = (e: number) => (Math.round((e*EUR_TRY)/10)*10).toLocaleString("tr-TR");
@@ -20,8 +20,8 @@ export const PKGS: Pkg[] = [
     name: "Buggy Safari",
     tagline: "Kafesli buggy ile çamur, toz ve tam gaz adrenalin",
     price: 22, oldPrice: 40, duration: "2 saat · Her gün",
-    hero: "/img/08.jpg",
-    gallery: ["/img/08.jpg","/img/07.jpg","/img/13.jpg","/img/09.jpg","/img/14.jpg","/img/00.jpg"],
+    hero: "/img/buggy-1.jpg",
+    gallery: ["/img/buggy-1.jpg","/img/buggy-2.jpg","/img/buggy-3.jpg","/img/buggy-4.jpg","/img/buggy-5.jpg","/img/buggy-6.jpg"],
     intro: "Toros eteklerinde çift kişilik kafesli buggy ile 2 saatlik toz-çamur macerası. Dere yataklarından geçiyor, çamur havuzlarına dalıyor, tepelere tırmanıyorsun. Ehliyet gerekmez, kask ve tüm ekipman bizden. Kirlenme garantili!",
     highlights: ["Çift kişilik kafesli buggy","Çamur havuzları ve dere geçişleri","2 saat dolu dolu parkur","Ehliyet gerekmez","Otelden ücretsiz alma-bırakma"],
     includes: ["Otelden alma-bırakma","Buggy ve kask","Rehber eşliğinde parkur","Sigorta"],
@@ -33,8 +33,8 @@ export const PKGS: Pkg[] = [
     name: "Quad Safari",
     tagline: "Toz duman ATV ile 2 saatlik off-road macera",
     price: 19, oldPrice: 30, duration: "2 saat · Her gün",
-    hero: "/img/01.jpg",
-    gallery: ["/img/01.jpg","/img/09.jpg","/img/10.jpg","/img/11.jpg","/img/12.jpg","/img/06.jpg"],
+    hero: "/img/quad-1.jpg",
+    gallery: ["/img/quad-1.jpg","/img/quad-2.jpg","/img/quad-3.jpg","/img/quad-4.jpg","/img/quad-5.jpg","/img/quad-6.jpg"],
     intro: "Kendi quad'ını (ATV) sür, Toros manzaralı tepelere tırman, dere yataklarından toz ve su sıçratarak geç. Yaklaşık 2 saatlik parkurda adrenalin hiç düşmüyor. Ehliyet gerekmez, kask ve ekipman dahil.",
     highlights: ["Kişiye özel quad (ATV)","Toz ve su sıçratan parkur","2 saat off-road macera","Ehliyet gerekmez","Otelden ücretsiz alma-bırakma"],
     includes: ["Otelden alma-bırakma","Quad ve kask","Rehber eşliğinde parkur","Sigorta"],
@@ -46,8 +46,8 @@ export const PKGS: Pkg[] = [
     name: "Family Buggy Safari",
     tagline: "Tüm aile tek buggy'de — 4 kişilik güvenli macera",
     price: 40, duration: "3-4 saat · Her gün",
-    hero: "/img/15.jpg",
-    gallery: ["/img/15.jpg","/img/16.jpg","/img/17.jpg","/img/18.jpg","/img/19.jpg","/img/13.jpg"],
+    hero: "/img/aile_buggy-1.jpg",
+    gallery: ["/img/aile_buggy-1.jpg","/img/aile_buggy-2.jpg","/img/aile_buggy-3.jpg","/img/aile_buggy-4.jpg","/img/aile_buggy-5.jpg","/img/aile_buggy-6.jpg"],
     intro: "Ailece maceraya çıkmak isteyenler için 4 kişilik geniş kafesli buggy. Anne, baba ve çocuklar aynı araçta, güvenli kafes içinde çamur ve tozun tadını çıkarıyor. Fiyat araç başıdır — tüm aile tek ücrete dahil.",
     highlights: ["4 kişilik tek araç","Aile başı sabit fiyat","Kafesli, güvenli tasarım","Çocuklar için uygun (6+ yaş)","Otelden ücretsiz alma-bırakma"],
     includes: ["Otelden alma-bırakma","4 kişilik buggy","Kasklar","Rehberlik","Sigorta"],
