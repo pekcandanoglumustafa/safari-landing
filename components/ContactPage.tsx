@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CONTACT } from "@/data";
 import { T, type Locale } from "@/i18n";
+import MobileMenu from "@/components/MobileMenu";
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
 
@@ -22,8 +23,7 @@ export default function ContactPage({ locale }: { locale: Locale }) {
           </nav>
           <div className="flex items-center gap-2">
             <LangSwitcher locale={locale} />
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
-               className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
+            <MobileMenu locale={locale} />
           </div>
         </div>
       </header>
@@ -60,7 +60,7 @@ export default function ContactPage({ locale }: { locale: Locale }) {
           <div className="mt-2 space-y-1 text-ink/80">
             <p><strong className="text-navy">{t.firm}:</strong> Sonnenklar Reisen Turizm Seyahat Acentası</p>
             <p><strong className="text-navy">{t.cert}:</strong> 9030 (A Grubu Seyahat Acentası)</p>
-            <p><strong className="text-navy">{t.addr}:</strong> Mimar Sinan Mah. Oymapınar Cad. No: 52, Manavgat / Antalya</p>
+            <p><strong className="text-navy">{t.addr}:</strong> Bucakşeyhler Mahallesi, Bucak Sokak 2/1, Manavgat / Antalya</p>
             <p><strong className="text-navy">{t.phone}:</strong> {CONTACT.phoneDisplay}</p>
           </div>
         </section>

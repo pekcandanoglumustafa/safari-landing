@@ -26,6 +26,7 @@ type Dict = {
   areasTitle: string; areasText: string; hoursTitle: string; hoursText: string;
   firmTitle: string; firm: string; cert: string; addr: string; phone: string;
   footerNote: string;
+  menu: string;
 };
 
 export const T: Record<Locale, Dict> = {
@@ -54,11 +55,12 @@ export const T: Record<Locale, Dict> = {
     contactText: "Form doldurmanıza, üye olmanıza veya ön ödeme yapmanıza gerek yok. Katılmak istediğiniz turu, tarihi ve kişi sayısını yazın — dakikalar içinde dönüş yapalım.",
     writeWhats: "WhatsApp'tan Yazın", callNow: "Hemen Arayın",
     areasTitle: "Hizmet Bölgelerimiz",
-    areasText: "Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl, Gündoğdu ve Belek bölgesindeki otellerden ücretsiz gidiş-dönüş transfer hizmeti sunuyoruz. Otelinizin adını iletmeniz yeterli; alınış saatinizi biz planlayıp bildiriyoruz.",
+    areasText: "Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl ve Gündoğdu bölgesindeki otellerden ücretsiz gidiş-dönüş transfer hizmeti sunuyoruz. Otelinizin adını iletmeniz yeterli; alınış saatinizi biz planlayıp bildiriyoruz.",
     hoursTitle: "Çalışma Saatleri",
-    hoursText: "Turlarımız her gün, sabah ve öğleden sonra olmak üzere iki seans halinde düzenlenir. Rezervasyon hattımız 08:00 – 22:00 arasında açıktır; WhatsApp mesajlarınıza gün içinde en kısa sürede yanıt veriyoruz.",
+    hoursText: "Turlarımız her gün 3 seans hâlinde düzenlenir: 08:00, 10:00 ve 15:00 grupları. Rezervasyon hattımız 7/24 açıktır; WhatsApp mesajlarınıza en kısa sürede yanıt veriyoruz.",
     firmTitle: "Firma Bilgileri", firm: "Firma", cert: "TÜRSAB Belge No", addr: "Adres", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
+    menu: "Menü",
   },
   en: {
     navPackages: "Packages", navFaq: "FAQ", navContact: "Contact",
@@ -85,11 +87,12 @@ export const T: Record<Locale, Dict> = {
     contactText: "No forms, no sign-up, no prepayment. Just send us the tour you'd like to join, the date and the number of people — we'll get back to you within minutes.",
     writeWhats: "Message on WhatsApp", callNow: "Call Us",
     areasTitle: "Service Areas",
-    areasText: "We offer free round-trip transfers from hotels in Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl, Gündoğdu and Belek. Just tell us your hotel name; we'll plan and confirm your pick-up time.",
+    areasText: "We offer free round-trip transfers from hotels in Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl and Gündoğdu. Just tell us your hotel name; we'll plan and confirm your pick-up time.",
     hoursTitle: "Opening Hours",
-    hoursText: "Tours run every day in two sessions, morning and afternoon. Our booking line is open 08:00 – 22:00 and we answer WhatsApp messages as quickly as possible during the day.",
+    hoursText: "Our tours run every day in 3 sessions: the 08:00, 10:00 and 15:00 groups. Our booking line is open 24/7 and we reply to WhatsApp messages as quickly as possible.",
     firmTitle: "Company Details", firm: "Company", cert: "TÜRSAB Licence No", addr: "Address", phone: "Phone",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
+    menu: "Menu",
   },
   de: {
     navPackages: "Pakete", navFaq: "FAQ", navContact: "Kontakt",
@@ -116,11 +119,12 @@ export const T: Record<Locale, Dict> = {
     contactText: "Keine Formulare, keine Anmeldung, keine Anzahlung. Senden Sie uns einfach die gewünschte Tour, das Datum und die Personenzahl — wir melden uns innerhalb weniger Minuten.",
     writeWhats: "Per WhatsApp schreiben", callNow: "Anrufen",
     areasTitle: "Unsere Servicegebiete",
-    areasText: "Wir bieten kostenlose Hin- und Rücktransfers von Hotels in Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl, Gündoğdu und Belek. Nennen Sie uns einfach Ihr Hotel; wir planen die Abholzeit und bestätigen sie.",
+    areasText: "Wir bieten kostenlose Hin- und Rücktransfers von Hotels in Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl und Gündoğdu. Nennen Sie uns einfach Ihr Hotel; wir planen die Abholzeit und bestätigen sie.",
     hoursTitle: "Öffnungszeiten",
-    hoursText: "Unsere Touren finden täglich in zwei Sessions statt, vormittags und nachmittags. Unsere Buchungshotline ist von 08:00 bis 22:00 Uhr erreichbar; WhatsApp-Nachrichten beantworten wir tagsüber schnellstmöglich.",
+    hoursText: "Unsere Touren finden täglich in 3 Sessions statt: die Gruppen um 08:00, 10:00 und 15:00 Uhr. Unsere Buchungshotline ist rund um die Uhr erreichbar; WhatsApp-Nachrichten beantworten wir schnellstmöglich.",
     firmTitle: "Firmendaten", firm: "Firma", cert: "TÜRSAB-Lizenznummer", addr: "Adresse", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
+    menu: "Menü",
   },
   ru: {
     navPackages: "Туры", navFaq: "Вопросы", navContact: "Контакты",
@@ -147,11 +151,12 @@ export const T: Record<Locale, Dict> = {
     contactText: "Никаких форм, регистрации и предоплаты. Просто напишите, какой тур вас интересует, дату и количество человек — ответим в течение нескольких минут.",
     writeWhats: "Написать в WhatsApp", callNow: "Позвонить",
     areasTitle: "Зоны обслуживания",
-    areasText: "Мы предоставляем бесплатный трансфер туда и обратно из отелей Сиде, Манавгата, Кумкёй, Чолаклы, Эвренсеки, Кызылагач, Титреенгёль, Гюндогду и Белека. Просто назовите отель — мы спланируем и подтвердим время выезда.",
+    areasText: "Мы предоставляем бесплатный трансфер туда и обратно из отелей Сиде, Манавгата, Кумкёй, Чолаклы, Эвренсеки, Кызылагач, Титреенгёль и Гюндогду. Просто назовите отель — мы спланируем и подтвердим время выезда.",
     hoursTitle: "Часы работы",
-    hoursText: "Туры проводятся ежедневно в две смены: утром и после обеда. Линия бронирования работает с 08:00 до 22:00, на сообщения в WhatsApp отвечаем в течение дня максимально быстро.",
+    hoursText: "Туры проводятся ежедневно в 3 смены: группы в 08:00, 10:00 и 15:00. Линия бронирования работает круглосуточно, на сообщения в WhatsApp отвечаем максимально быстро.",
     firmTitle: "Данные компании", firm: "Компания", cert: "Лицензия TÜRSAB", addr: "Адрес", phone: "Телефон",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
+    menu: "Меню",
   },
   pl: {
     navPackages: "Pakiety", navFaq: "FAQ", navContact: "Kontakt",
@@ -178,10 +183,11 @@ export const T: Record<Locale, Dict> = {
     contactText: "Bez formularzy, rejestracji i zaliczek. Napisz, która wycieczka Cię interesuje, w jakim terminie i dla ilu osób — odpowiemy w kilka minut.",
     writeWhats: "Napisz na WhatsApp", callNow: "Zadzwoń",
     areasTitle: "Obszar obsługi",
-    areasText: "Oferujemy darmowy transfer w obie strony z hoteli w Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl, Gündoğdu i Belek. Wystarczy podać nazwę hotelu — zaplanujemy i potwierdzimy godzinę odbioru.",
+    areasText: "Oferujemy darmowy transfer w obie strony z hoteli w Side, Manavgat, Kumköy, Çolaklı, Evrenseki, Kızılağaç, Titreyengöl i Gündoğdu. Wystarczy podać nazwę hotelu — zaplanujemy i potwierdzimy godzinę odbioru.",
     hoursTitle: "Godziny otwarcia",
-    hoursText: "Wycieczki odbywają się codziennie w dwóch turach: rano i po południu. Infolinia rezerwacyjna działa od 08:00 do 22:00, a na wiadomości WhatsApp odpowiadamy w ciągu dnia najszybciej jak to możliwe.",
+    hoursText: "Nasze wycieczki odbywają się codziennie w 3 turach: grupy o 08:00, 10:00 i 15:00. Infolinia rezerwacyjna działa 24/7, a na wiadomości WhatsApp odpowiadamy najszybciej jak to możliwe.",
     firmTitle: "Dane firmy", firm: "Firma", cert: "Numer licencji TÜRSAB", addr: "Adres", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
+    menu: "Menu",
   },
 };

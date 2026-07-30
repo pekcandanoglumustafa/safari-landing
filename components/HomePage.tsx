@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { PKGS, CONTACT, toTL } from "@/data";
 import { T, type Locale } from "@/i18n";
+import MobileMenu from "@/components/MobileMenu";
 import { pkgText } from "@/pkg-i18n";
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
@@ -30,10 +31,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           </nav>
           <div className="flex items-center gap-2">
             <LangSwitcher locale={locale} />
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
-               className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">
-              WhatsApp
-            </a>
+            <MobileMenu locale={locale} />
           </div>
         </header>
 
@@ -142,7 +140,9 @@ export default function HomePage({ locale }: { locale: Locale }) {
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-4 text-sm font-semibold text-navy">
           <Link href={`${base}/sss`} className="hover:text-orange">{t.faqTitle}</Link>
           <Link href={`${base}/iletisim`} className="hover:text-orange">{t.contactTitle}</Link>
-          <span className="text-ink/50">{t.footerNote}</span>
+          <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange to-[#e01f26] px-4 py-2 text-sm font-extrabold text-white shadow-lg">
+            <span className="text-base">🏅</span> {t.footerNote}
+          </span>
         </div>
       </footer>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PKGS, getPkg, CONTACT, toTL } from "@/data";
 import { T, type Locale } from "@/i18n";
+import MobileMenu from "@/components/MobileMenu";
 import { pkgText } from "@/pkg-i18n";
 import { SEO_CONTENT, FAQ_FULL } from "@/content";
 import Gallery from "@/app/Gallery";
@@ -50,7 +51,7 @@ export default function TourPage({ slug, locale }: { slug: string; locale: Local
           </nav>
           <div className="flex items-center gap-2">
             <LangSwitcher locale={locale} />
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
+            <MobileMenu locale={locale} />
           </div>
         </div>
       </header>
