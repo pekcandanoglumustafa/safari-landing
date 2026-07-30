@@ -6,10 +6,10 @@ import ConversionTracker from "@/app/ConversionTracker";
 const SITE = "https://www.sidequadbuggy.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: "Quad & Buggy Safari Antalya | Side Manavgat — Otelden Alma Dahil",
-  description: "Antalya, Side ve Manavgat'ta Quad Safari, Buggy Safari ve Aile Buggy turları. Otelden ücretsiz alma-bırakma, ödeme tur günü. Hemen WhatsApp: 0507 617 17 77.",
-  keywords: ["antalya quad safari","side buggy safari","manavgat quad turu","antalya atv turu","buggy safari fiyat","aile buggy safari"],
-  openGraph: { type: "website", locale: "tr_TR", title: "Quad & Buggy Safari Antalya", description: "Quad, Buggy ve Aile Buggy safari — otelden alma dahil, ödeme tur günü.", images: ["/img/buggy-1.jpg"] },
+  title: "Side Quad & Buggy Safari | Manavgat — Otelden Ücretsiz Alma, Ödeme Tur Günü",
+  description: "Side ve Manavgat'ta Quad Safari, Buggy Safari ve Aile Buggy turları. Otelden ücretsiz alma-bırakma, ödeme tur günü, ehliyet gerekmez. WhatsApp: 0507 617 17 77.",
+  keywords: ["side quad safari","side buggy safari","manavgat quad turu","side atv turu","buggy safari fiyat","aile buggy safari","side quad buggy"],
+  openGraph: { type: "website", locale: "tr_TR", title: "Side Quad & Buggy Safari", description: "Quad, Buggy ve Aile Buggy safari — Side ve Manavgat, otelden alma dahil, ödeme tur günü.", images: ["/img/buggy-1.jpg"] },
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
 };
