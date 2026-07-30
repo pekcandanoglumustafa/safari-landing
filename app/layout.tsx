@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Quad & Buggy Safari Antalya | Side Manavgat — Otelden Alma Dahil",
   description: "Antalya, Side ve Manavgat'ta Quad Safari, Buggy Safari ve Aile Buggy turları. Otelden ücretsiz alma-bırakma, ödeme tur günü. Hemen WhatsApp: 0507 617 17 77.",
   keywords: ["antalya quad safari","side buggy safari","manavgat quad turu","antalya atv turu","buggy safari fiyat","aile buggy safari"],
-  openGraph: { type: "website", locale: "tr_TR", title: "Quad & Buggy Safari Antalya", description: "Quad, Buggy ve Aile Buggy safari — otelden alma dahil, ödeme tur günü.", images: ["/img/08.jpg"] },
+  openGraph: { type: "website", locale: "tr_TR", title: "Quad & Buggy Safari Antalya", description: "Quad, Buggy ve Aile Buggy safari — otelden alma dahil, ödeme tur günü.", images: ["/img/buggy-1.jpg"] },
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
 };
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr">
       <head>
-        <link rel="preload" as="image" href="/_next/image?url=%2Fimg%2F08.jpg&w=1600&q=82" fetchPriority="high" />
+        <link rel="preload" as="image" href="/_next/image?url=%2Fimg%2Fbuggy-1.jpg&w=1600&q=82" fetchPriority="high" />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11252315439" />
         <script

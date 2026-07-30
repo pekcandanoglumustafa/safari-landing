@@ -10,7 +10,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="absolute inset-0" aria-hidden>
-          <Image src="/img/08.jpg" alt="" fill priority sizes="100vw" quality={82} className="kb object-cover" />
+          <Image src="/img/buggy-1.jpg" alt="" fill priority sizes="100vw" quality={82} className="kb object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/60 to-navy/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-navy/20" />
         </div>
@@ -19,6 +19,11 @@ export default function Home() {
           <span className="rounded-lg bg-white px-2.5 py-1.5">
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={132} height={33} priority />
           </span>
+          <nav className="hidden items-center gap-5 text-sm font-semibold text-white sm:flex">
+            <a href="#paketler" className="hover:text-orange">Paketler</a>
+            <Link href="/sss" className="hover:text-orange">S.S.S.</Link>
+            <Link href="/iletisim" className="hover:text-orange">İletişim</Link>
+          </nav>
           <div className="flex items-center gap-2">
             <LangSwitcher />
             <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"

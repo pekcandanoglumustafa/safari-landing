@@ -51,6 +51,11 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
           <Link href="/" className="rounded-lg bg-white px-2.5 py-1.5">
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={120} height={30} />
           </Link>
+          <nav className="hidden items-center gap-5 text-sm font-semibold text-white sm:flex">
+            <Link href="/" className="hover:text-orange">Paketler</Link>
+            <Link href="/sss" className="hover:text-orange">S.S.S.</Link>
+            <Link href="/iletisim" className="hover:text-orange">İletişim</Link>
+          </nav>
           <div className="flex items-center gap-2">
             <LangSwitcher />
             <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>

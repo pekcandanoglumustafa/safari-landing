@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 
 const LANGS = [
-  { code: "tr", label: "Türkçe", flag: "🇹🇷" },
+  { code: "tr", label: "Türkçe", flag: "🇹🇷", ready: true },
   { code: "en", label: "English", flag: "🇬🇧" },
   { code: "de", label: "Deutsch", flag: "🇩🇪" },
   { code: "ru", label: "Русский", flag: "🇷🇺" },
@@ -31,9 +31,10 @@ export default function LangSwitcher() {
         <div className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-xl bg-white py-1 shadow-xl ring-1 ring-black/10">
           {LANGS.map((l) => (
             <button key={l.code}
-              onClick={() => { setActive(l); setOpen(false); }}
-              className={`flex w-full items-center gap-2.5 px-4 py-2.5 text-sm hover:bg-orange/10 ${active.code === l.code ? "font-bold text-navy" : "text-ink/80"}`}>
-              <span className="text-base">{l.flag}</span>{l.label}
+              onClick={() => { if (l.ready) setActive(l); setOpen(false); }}
+              className={`flex w-full items-center justify-between gap-2.5 px-4 py-2.5 text-sm hover:bg-orange/10 ${active.code === l.code ? "font-bold text-navy" : "text-ink/80"}`}>
+              <span className="flex items-center gap-2.5"><span className="text-base">{l.flag}</span>{l.label}</span>
+              {!l.ready && <span className="rounded-full bg-ink/10 px-2 py-0.5 text-[10px] font-semibold text-ink/60">soon</span>}
             </button>
           ))}
         </div>
