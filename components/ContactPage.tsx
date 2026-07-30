@@ -17,7 +17,7 @@ export default function ContactPage({ locale }: { locale: Locale }) {
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={120} height={30} />
           </Link>
           <nav className="hidden items-center gap-5 text-sm font-semibold text-white sm:flex">
-            <Link href={base || "/"} className="hover:text-orange">{t.navPackages}</Link>
+            <Link href={`${base || ""}/#paketler`} className="hover:text-orange">{t.navPackages}</Link>
             <Link href={`${base}/sss`} className="hover:text-orange">{t.navFaq}</Link>
             <Link href={`${base}/iletisim`} className="hover:text-orange">{t.navContact}</Link>
           </nav>

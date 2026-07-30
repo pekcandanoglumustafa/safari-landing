@@ -8,7 +8,7 @@ export default function MobileMenu({ locale }: { locale: Locale }) {
   const t = T[locale];
   const base = locale === "tr" ? "" : `/${locale}`;
   const items = [
-    { href: base || "/", label: t.navPackages },
+    { href: `${base || ""}/#paketler`, label: t.navPackages },
     { href: `${base}/sss`, label: t.navFaq },
     { href: `${base}/iletisim`, label: t.navContact },
   ];

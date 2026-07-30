@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Tick from "@/components/Tick";
 import { PKGS, CONTACT, toTL } from "@/data";
 import { T, type Locale } from "@/i18n";
 import MobileMenu from "@/components/MobileMenu";
@@ -42,7 +43,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
               <span className="text-orange">★★★★★</span> Google
             </span>
             <span className="blink inline-flex items-center gap-1.5 rounded-full bg-orange px-3.5 py-1.5 text-sm font-bold text-white shadow-lg">
-              ✔ {t.badgeAgency}
+              <Tick /> {t.badgeAgency}
             </span>
           </div>
           <h1 className="display max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
@@ -62,11 +63,11 @@ export default function HomePage({ locale }: { locale: Locale }) {
             </a>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white">
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t1}</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t2}</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t3}</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t4}</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t5}</span>
+            <span className="flex items-center gap-1.5"><Tick /> {t.t1}</span>
+            <span className="flex items-center gap-1.5"><Tick /> {t.t2}</span>
+            <span className="flex items-center gap-1.5"><Tick /> {t.t3}</span>
+            <span className="flex items-center gap-1.5"><Tick /> {t.t4}</span>
+            <span className="flex items-center gap-1.5"><Tick /> {t.t5}</span>
           </div>
         </div>
       </section>

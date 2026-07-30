@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Tick from "@/components/Tick";
 import { notFound } from "next/navigation";
 import { PKGS, getPkg, CONTACT, toTL } from "@/data";
 import { T, type Locale } from "@/i18n";
@@ -45,7 +46,7 @@ export default function TourPage({ slug, locale }: { slug: string; locale: Local
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={120} height={30} />
           </Link>
           <nav className="hidden items-center gap-5 text-sm font-semibold text-white sm:flex">
-            <Link href={base || "/"} className="hover:text-orange">{t.navPackages}</Link>
+            <Link href={`${base || ""}/#paketler`} className="hover:text-orange">{t.navPackages}</Link>
             <Link href={`${base}/sss`} className="hover:text-orange">{t.navFaq}</Link>
             <Link href={`${base}/iletisim`} className="hover:text-orange">{t.navContact}</Link>
           </nav>
@@ -89,7 +90,7 @@ export default function TourPage({ slug, locale }: { slug: string; locale: Local
           <h2 className="display mt-10 text-2xl font-extrabold text-navy">{t.highlights}</h2>
           <ul className="mt-4 grid gap-2 sm:grid-cols-2">
             {highlights.map((h) => (
-              <li key={h} className="rounded-xl bg-orange/10 px-4 py-3 font-semibold text-navy">✓ {h}</li>
+              <li key={h} className="flex items-center gap-2 rounded-xl bg-orange/10 px-4 py-3 font-semibold text-navy"><Tick className="!text-orange" /> {h}</li>
             ))}
           </ul>
 
@@ -107,7 +108,7 @@ export default function TourPage({ slug, locale }: { slug: string; locale: Local
           </ol>
 
           <h2 className="display mt-10 text-2xl font-extrabold text-navy">{t.included}</h2>
-          <ul className="mt-4 space-y-2">{includes.map((i) => <li key={i} className="text-ink/85">✓ {i}</li>)}</ul>
+          <ul className="mt-4 space-y-2">{includes.map((i) => <li key={i} className="flex items-center gap-2 text-ink/85"><Tick className="!text-orange" /> {i}</li>)}</ul>
 
           <h2 className="display mt-10 text-2xl font-extrabold text-navy">{t.tourDetails}</h2>
           <div className="mt-4 space-y-3">
