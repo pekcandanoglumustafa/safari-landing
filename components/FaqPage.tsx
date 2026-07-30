@@ -1,23 +1,20 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { CONTACT, PKGS } from "@/data";
 import { FAQ_FULL } from "@/content";
+import { T, type Locale } from "@/i18n";
+import { pkgText } from "@/pkg-i18n";
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
 
-export const metadata: Metadata = {
-  title: "Sıkça Sorulan Sorular | Side Quad & Buggy Safari",
-  description:
-    "Side Quad Safari, Buggy Safari ve Aile Buggy turları hakkında merak edilenler: ehliyet, yaş sınırı, süre, transfer, ödeme ve güvenlik soruları yanıtlandı.",
-  alternates: { canonical: "/sss" },
-};
-
-export default function SSS() {
+export default function FaqPage({ locale }: { locale: Locale }) {
+  const t = T[locale];
+  const base = locale === "tr" ? "" : `/${locale}`;
+  const listFor = (slug: string) => pkgText(locale, slug)?.faq ?? FAQ_FULL[slug];
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: Object.values(FAQ_FULL).flat().map((f) => ({
+    mainEntity: PKGS.flatMap((p) => listFor(p.slug) ?? []).map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -29,16 +26,16 @@ export default function SSS() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="bg-navy">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <Link href="/" className="rounded-lg bg-white px-2.5 py-1.5">
+          <Link href={base || "/"} className="rounded-lg bg-white px-2.5 py-1.5">
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={120} height={30} />
           </Link>
           <nav className="hidden items-center gap-5 text-sm font-semibold text-white sm:flex">
-            <Link href="/" className="hover:text-orange">Paketler</Link>
-            <Link href="/sss" className="hover:text-orange">S.S.S.</Link>
-            <Link href="/iletisim" className="hover:text-orange">İletişim</Link>
+            <Link href={base || "/"} className="hover:text-orange">{t.navPackages}</Link>
+            <Link href={`${base}/sss`} className="hover:text-orange">{t.navFaq}</Link>
+            <Link href={`${base}/iletisim`} className="hover:text-orange">{t.navContact}</Link>
           </nav>
           <div className="flex items-center gap-2">
-            <LangSwitcher />
+            <LangSwitcher locale={locale} />
             <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
                className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
           </div>
@@ -46,18 +43,17 @@ export default function SSS() {
       </header>
 
       <main className="mx-auto max-w-3xl px-4 py-14">
-        <h1 className="display text-4xl font-extrabold text-navy">Sıkça Sorulan Sorular</h1>
+        <h1 className="display text-4xl font-extrabold text-navy">{t.faqTitle}</h1>
         <p className="mt-3 text-lg text-ink/75">
-          Side Quad Safari, Buggy Safari ve Aile Buggy turlarımız hakkında en çok merak edilenleri
-          burada topladık. Aradığınız yanıtı bulamazsanız WhatsApp&apos;tan yazmanız yeterli.
+          {t.faqIntro}
         </p>
 
         {PKGS.map((p) => {
-          const list = FAQ_FULL[p.slug];
+          const list = listFor(p.slug);
           if (!list) return null;
           return (
             <section key={p.slug} className="mt-10">
-              <h2 className="display text-2xl font-extrabold text-navy">{p.name}</h2>
+              <h2 className="display text-2xl font-extrabold text-navy">{pkgText(locale, p.slug)?.name ?? p.name}</h2>
               <div className="mt-4 space-y-3">
                 {list.map((f) => (
                   <details key={f.q} className="group rounded-xl bg-white p-4 ring-1 ring-black/5">
@@ -68,16 +64,16 @@ export default function SSS() {
                   </details>
                 ))}
               </div>
-              <Link href={`/tur/${p.slug}`} className="mt-4 inline-block font-semibold text-orange hover:underline">
-                {p.name} detaylarını gör →
+              <Link href={`${base}/tur/${p.slug}`} className="mt-4 inline-block font-semibold text-orange hover:underline">
+                {pkgText(locale, p.slug)?.name ?? p.name} {t.seeTour} →
               </Link>
             </section>
           );
         })}
 
         <div className="mt-12 rounded-2xl bg-navy p-8 text-center text-white">
-          <h2 className="display text-2xl font-extrabold">Başka sorunuz mu var?</h2>
-          <p className="mt-2 text-white/85">WhatsApp&apos;tan yazın, hemen yanıtlayalım.</p>
+          <h2 className="display text-2xl font-extrabold">{t.moreQ}</h2>
+          <p className="mt-2 text-white/85">{t.moreQx}</p>
           <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
              className="mt-5 inline-block rounded-full bg-wa px-7 py-3.5 font-bold text-white hover:bg-wa-dark">
             WhatsApp: {CONTACT.phoneDisplay}

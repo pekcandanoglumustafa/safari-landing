@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PKGS, CONTACT, toTL } from "@/data";
+import { T, type Locale } from "@/i18n";
+import { pkgText } from "@/pkg-i18n";
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
 
-export default function Home() {
+export default function HomePage({ locale }: { locale: Locale }) {
+  const t = T[locale];
+  const base = locale === "tr" ? "" : `/${locale}`;
   return (
     <>
       {/* HERO */}
@@ -20,12 +24,12 @@ export default function Home() {
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={132} height={33} priority />
           </span>
           <nav className="hidden items-center gap-5 text-sm font-semibold text-white sm:flex">
-            <a href="#paketler" className="hover:text-orange">Paketler</a>
-            <Link href="/sss" className="hover:text-orange">S.S.S.</Link>
-            <Link href="/iletisim" className="hover:text-orange">İletişim</Link>
+            <a href="#paketler" className="hover:text-orange">{t.navPackages}</a>
+            <Link href={`${base}/sss`} className="hover:text-orange">{t.navFaq}</Link>
+            <Link href={`${base}/iletisim`} className="hover:text-orange">{t.navContact}</Link>
           </nav>
           <div className="flex items-center gap-2">
-            <LangSwitcher />
+            <LangSwitcher locale={locale} />
             <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
                className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">
               WhatsApp
@@ -40,11 +44,11 @@ export default function Home() {
               <span className="text-orange">★★★★★</span> Google
             </span>
             <span className="blink inline-flex items-center gap-1.5 rounded-full bg-orange px-3.5 py-1.5 text-sm font-bold text-white shadow-lg">
-              ✔ A Grubu Acente · 9030
+              ✔ {t.badgeAgency}
             </span>
           </div>
           <h1 className="display max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
-            Side&apos;de Çamur, Toz ve <span className="glow text-orange">Tam Gaz Adrenalin</span>
+            {t.heroTitle1} <span className="glow text-orange">{t.heroTitleGlow}</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/90">
             Quad, Buggy ve Aile Buggy safari — Side ve Manavgat çıkışlı, Toros eteklerinde 2 saatlik off-road macera.
@@ -60,30 +64,30 @@ export default function Home() {
             </a>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white">
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Otelden ücretsiz transfer</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Ödeme tur günü</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Ehliyet gerekmez</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Tüm ekipman dahil</span>
-            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> Gizli ödeme yok</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t1}</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t2}</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t3}</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t4}</span>
+            <span className="flex items-center gap-1.5"><span className="text-white">✔</span> {t.t5}</span>
           </div>
         </div>
       </section>
 
       {/* 3 PAKET */}
       <section id="paketler" className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="display text-center text-3xl font-extrabold text-navy md:text-4xl">Safari Paketlerimiz</h2>
-        <p className="mx-auto mt-2 max-w-md text-center text-ink/70">Tıkla, detayları ve fotoğrafları gör, WhatsApp&apos;tan ayırt.</p>
+        <h2 className="display text-center text-3xl font-extrabold text-navy md:text-4xl">{t.pkgTitle}</h2>
+        <p className="mx-auto mt-2 max-w-md text-center text-ink/70">{t.pkgSub}</p>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {PKGS.map((p) => (
-            <Link key={p.slug} href={`/tur/${p.slug}`}
+            <Link key={p.slug} href={`${base}/tur/${p.slug}`}
               className="group relative block overflow-hidden rounded-3xl bg-navy shadow-lg ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl">
               <div className="relative aspect-[4/5]">
                 <Image src={p.hero} alt={p.name} fill sizes="(max-width:768px) 100vw, 33vw" className="card-img object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-5 text-white">
                   <span className="mb-2 inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-semibold backdrop-blur">{p.duration}</span>
-                  <h3 className="display text-2xl font-extrabold">{p.name}</h3>
-                  <p className="mt-1 text-sm text-white/85">{p.tagline}</p>
+                  <h3 className="display text-2xl font-extrabold">{pkgText(locale, p.slug)?.name ?? p.name}</h3>
+                  <p className="mt-1 text-sm text-white/85">{pkgText(locale, p.slug)?.tagline ?? p.tagline}</p>
                   <div className="mt-4 flex items-center justify-between border-t border-white/20 pt-3">
                     <span className="text-right">
                       <span className="flex items-baseline gap-1.5">
@@ -107,10 +111,7 @@ export default function Home() {
       <section className="bg-navy py-14 text-white">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 md:grid-cols-4">
           {[
-            ["Otelden Alma", "Side, Manavgat ve çevresinden ücretsiz servis"],
-            ["Ödeme Tur Günü", "Ön ödeme yok, kredi kartı gerekmez"],
-            ["Ehliyet Gerekmez", "Başlangıç seviyesine uygun, rehber yanınızda"],
-            ["4.9 Google Puanı", "Binlerce memnun misafir, A grubu acente"],
+            [t.why1, t.why1x], [t.why2, t.why2x], [t.why3, t.why3x], [t.why4, t.why4x],
           ].map(([a, b]) => (
             <div key={a}>
               <p className="display text-lg font-bold text-orange">{a}</p>
@@ -122,8 +123,8 @@ export default function Home() {
 
       {/* SON CTA */}
       <section className="mx-auto max-w-4xl px-4 py-16 text-center">
-        <h2 className="display text-3xl font-extrabold text-navy md:text-4xl">Maceraya Hazır mısın?</h2>
-        <p className="mx-auto mt-3 max-w-md text-ink/70">Hangi paket, hangi gün, kaç kişi — WhatsApp&apos;tan yaz, yerini ayırt.</p>
+        <h2 className="display text-3xl font-extrabold text-navy md:text-4xl">{t.finalTitle}</h2>
+        <p className="mx-auto mt-3 max-w-md text-ink/70">{t.finalText}</p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
           <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
              className="rounded-full bg-wa px-7 py-3.5 font-bold text-white hover:bg-wa-dark">
@@ -139,9 +140,9 @@ export default function Home() {
       {/* ALT MENÜ */}
       <footer className="border-t border-black/5 bg-white py-8">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-4 text-sm font-semibold text-navy">
-          <Link href="/sss" className="hover:text-orange">Sıkça Sorulan Sorular</Link>
-          <Link href="/iletisim" className="hover:text-orange">İletişim & Rezervasyon</Link>
-          <span className="text-ink/50">TÜRSAB 9030 · Sonnenklar Reisen Turizm</span>
+          <Link href={`${base}/sss`} className="hover:text-orange">{t.faqTitle}</Link>
+          <Link href={`${base}/iletisim`} className="hover:text-orange">{t.contactTitle}</Link>
+          <span className="text-ink/50">{t.footerNote}</span>
         </div>
       </footer>
 

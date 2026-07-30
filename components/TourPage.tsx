@@ -1,41 +1,33 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PKGS, getPkg, CONTACT, toTL } from "@/data";
+import { T, type Locale } from "@/i18n";
+import { pkgText } from "@/pkg-i18n";
 import { SEO_CONTENT, FAQ_FULL } from "@/content";
 import Gallery from "@/app/Gallery";
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
 
-export function generateStaticParams() {
-  return PKGS.map((p) => ({ slug: p.slug }));
-}
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const p = getPkg(slug);
-  if (!p) return {};
-  return {
-    title: `${p.name} Antalya — Fiyat & Rezervasyon | Side Manavgat`,
-    description: `${p.tagline}. ${p.intro.slice(0, 110)} Otelden alma dahil, €${p.price} (${toTL(p.price)} ₺).`,
-    alternates: { canonical: `/tur/${slug}` },
-    openGraph: { title: `${p.name} Antalya`, description: p.tagline, images: [p.hero] },
-  };
-}
-
-export default async function TurPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default function TourPage({ slug, locale }: { slug: string; locale: Locale }) {
   const p = getPkg(slug);
   if (!p) notFound();
+  const t = T[locale];
+  const base = locale === "tr" ? "" : `/${locale}`;
+  const tr = pkgText(locale, slug);
+  const name = tr?.name ?? p.name;
+  const tagline = tr?.tagline ?? p.tagline;
 
-  const seo = SEO_CONTENT[slug];
-  const faqList = FAQ_FULL[slug] ?? p.faq;
-  const wa = `${CONTACT.whatsapp}?text=${encodeURIComponent(`Merhaba, "${p.name}" için rezervasyon yapmak istiyorum. Tarih ve kişi sayısı: `)}`;
+  const seo = tr ? { intro: tr.intro, sections: tr.sections } : SEO_CONTENT[slug];
+  const faqList = tr?.faq ?? FAQ_FULL[slug] ?? p.faq;
+  const highlights = tr?.highlights ?? p.highlights;
+  const includes = tr?.includes ?? p.includes;
+  const program = tr?.program ?? p.program;
+  const wa = `${CONTACT.whatsapp}?text=${encodeURIComponent(locale === "tr" ? `Merhaba, "${name}" için rezervasyon yapmak istiyorum. Tarih ve kişi sayısı: ` : `Hello, I would like to book "${name}". Date and number of people: `)}`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Product", name: `${p.name} Antalya`, description: p.intro, image: p.gallery,
+      { "@type": "Product", name, description: seo?.intro ?? p.intro, image: p.gallery,
         offers: { "@type": "Offer", price: p.price, priceCurrency: "EUR", availability: "https://schema.org/InStock" },
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "120" } },
       { "@type": "FAQPage", mainEntity: faqList.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
@@ -48,16 +40,16 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
 
       <header className="sticky top-0 z-40 bg-navy/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <Link href="/" className="rounded-lg bg-white px-2.5 py-1.5">
+          <Link href={base || "/"} className="rounded-lg bg-white px-2.5 py-1.5">
             <Image src="/logo.png" alt="Side Quad Buggy Safari" width={120} height={30} />
           </Link>
           <nav className="hidden items-center gap-5 text-sm font-semibold text-white sm:flex">
-            <Link href="/" className="hover:text-orange">Paketler</Link>
-            <Link href="/sss" className="hover:text-orange">S.S.S.</Link>
-            <Link href="/iletisim" className="hover:text-orange">İletişim</Link>
+            <Link href={base || "/"} className="hover:text-orange">{t.navPackages}</Link>
+            <Link href={`${base}/sss`} className="hover:text-orange">{t.navFaq}</Link>
+            <Link href={`${base}/iletisim`} className="hover:text-orange">{t.navContact}</Link>
           </nav>
           <div className="flex items-center gap-2">
-            <LangSwitcher />
+            <LangSwitcher locale={locale} />
             <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="rounded-full bg-wa px-4 py-2 text-sm font-bold text-white hover:bg-wa-dark">WhatsApp</a>
           </div>
         </div>
@@ -70,15 +62,15 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
           <div className="absolute inset-0 bg-navy/60" />
         </div>
         <div className="relative mx-auto max-w-5xl px-4 py-14">
-          <Link href="/" className="text-sm text-white/80 hover:text-white">← Tüm paketler</Link>
+          <Link href={base || "/"} className="text-sm text-white/80 hover:text-white">← {t.back}</Link>
           <p className="mt-3 inline-block rounded-full bg-white/20 px-4 py-1 text-sm font-bold backdrop-blur">{p.duration}</p>
-          <h1 className="display mt-2 text-4xl font-extrabold md:text-5xl">{p.name}</h1>
-          <p className="mt-2 max-w-xl text-lg text-white/90">{p.tagline}</p>
+          <h1 className="display mt-2 text-4xl font-extrabold md:text-5xl">{name}</h1>
+          <p className="mt-2 max-w-xl text-lg text-white/90">{tagline}</p>
         </div>
       </div>
 
       {/* GALERİ — oklar, otomatik geçiş, büyütme */}
-      <Gallery images={p.gallery} name={p.name} />
+      <Gallery images={p.gallery} name={name} labels={{ prev: t.prev, next: t.next, close: t.close, zoom: t.zoom }} />
 
       <div className="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:grid-cols-[1fr_300px]">
         <div>
@@ -93,30 +85,30 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
             </section>
           ))}
 
-          <h2 className="display mt-10 text-2xl font-extrabold text-navy">Öne Çıkanlar</h2>
+          <h2 className="display mt-10 text-2xl font-extrabold text-navy">{t.highlights}</h2>
           <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-            {p.highlights.map((h) => (
+            {highlights.map((h) => (
               <li key={h} className="rounded-xl bg-orange/10 px-4 py-3 font-semibold text-navy">✓ {h}</li>
             ))}
           </ul>
 
-          <h2 className="display mt-10 text-2xl font-extrabold text-navy">Nasıl İşliyor?</h2>
+          <h2 className="display mt-10 text-2xl font-extrabold text-navy">{t.how}</h2>
           <ol className="mt-4 space-y-0">
-            {p.program.map((s, i) => (
+            {program.map((s, i) => (
               <li key={i} className="relative flex gap-4 pb-6 last:pb-0">
                 <div className="flex flex-col items-center">
                   <span className="h-3 w-3 shrink-0 rounded-full bg-orange" />
-                  {i < p.program.length - 1 && <span className="w-px flex-1 bg-orange/30" />}
+                  {i < program.length - 1 && <span className="w-px flex-1 bg-orange/30" />}
                 </div>
                 <div><p className="font-bold text-navy">{s.t}</p><p className="text-ink/80">{s.x}</p></div>
               </li>
             ))}
           </ol>
 
-          <h2 className="display mt-10 text-2xl font-extrabold text-navy">Fiyata Dahil</h2>
-          <ul className="mt-4 space-y-2">{p.includes.map((i) => <li key={i} className="text-ink/85">✓ {i}</li>)}</ul>
+          <h2 className="display mt-10 text-2xl font-extrabold text-navy">{t.included}</h2>
+          <ul className="mt-4 space-y-2">{includes.map((i) => <li key={i} className="text-ink/85">✓ {i}</li>)}</ul>
 
-          <h2 className="display mt-10 text-2xl font-extrabold text-navy">Tur Detayları</h2>
+          <h2 className="display mt-10 text-2xl font-extrabold text-navy">{t.tourDetails}</h2>
           <div className="mt-4 space-y-3">
             {faqList.map((f) => (
               <details key={f.q} className="group rounded-xl bg-white p-4 ring-1 ring-black/5">
@@ -131,15 +123,15 @@ export default async function TurPage({ params }: { params: Promise<{ slug: stri
 
         <aside className="h-fit md:sticky md:top-24">
           <div className="rounded-2xl bg-white p-5 shadow-lg ring-1 ring-black/5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-ink/60">Kişi başı</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink/60">{t.perPerson}</p>
             <p className="flex items-baseline gap-2">
               {p.oldPrice && <span className="text-lg font-semibold text-ink/45 line-through">€{p.oldPrice}</span>}
               <span className="display text-3xl font-extrabold text-orange">€{p.price}</span>
             </p>
             <p className="text-sm font-semibold text-ink/70">≈ {toTL(p.price)} ₺</p>
-            <a href={wa} target="_blank" rel="noopener" data-wa="1" className="mt-4 block rounded-full bg-wa py-3.5 text-center font-bold text-white hover:bg-wa-dark">WhatsApp&apos;tan Rezervasyon</a>
-            <a href={`tel:${CONTACT.phoneIntl}`} className="mt-2 block rounded-full bg-navy py-3.5 text-center font-bold text-white hover:bg-deep">Ara: {CONTACT.phoneDisplay}</a>
-            <p className="mt-3 text-center text-xs text-ink/70">Ön ödeme yok · Ödeme tur günü · Otelden ücretsiz transfer</p>
+            <a href={wa} target="_blank" rel="noopener" data-wa="1" className="mt-4 block rounded-full bg-wa py-3.5 text-center font-bold text-white hover:bg-wa-dark">{t.bookWhats}</a>
+            <a href={`tel:${CONTACT.phoneIntl}`} className="mt-2 block rounded-full bg-navy py-3.5 text-center font-bold text-white hover:bg-deep">{t.call}: {CONTACT.phoneDisplay}</a>
+            <p className="mt-3 text-center text-xs text-ink/70">{t.noPrepay}</p>
           </div>
         </aside>
       </div>
