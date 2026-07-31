@@ -74,7 +74,7 @@ export default function TourPage({ slug, locale }: { slug: string; locale: Local
       {/* GALERİ — oklar, otomatik geçiş, büyütme */}
       <Gallery images={p.gallery} name={name} labels={{ prev: t.prev, next: t.next, close: t.close, zoom: t.zoom }} />
 
-      <div className="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:grid-cols-[1fr_300px]">
+      <div className="mx-auto grid max-w-5xl gap-10 px-4 pb-28 pt-12 md:pb-12 md:grid-cols-[1fr_300px]">
         <div>
           <p className="text-lg leading-relaxed text-ink/85">{seo?.intro ?? p.intro}</p>
 

@@ -42,7 +42,7 @@ export default function FaqPage({ locale }: { locale: Locale }) {
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl px-4 py-14">
+      <main className="mx-auto max-w-3xl px-4 pb-28 pt-14 md:pb-14">
         <h1 className="display text-4xl font-extrabold text-navy">{t.faqTitle}</h1>
         <p className="mt-3 text-lg text-ink/75">
           {t.faqIntro}

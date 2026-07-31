@@ -51,7 +51,7 @@ ym(98714131, 'init', {webvisor:true, clickmap:true, referrer: document.referrer,
         />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body className="min-h-screen antialiased">
+      <body className="min-h-screen antialiased pb-16 md:pb-0">
         <ConversionTracker />
         <noscript><div><img src="https://mc.yandex.ru/watch/98714131" style={{ position: "absolute", left: "-9999px" }} alt="" /></div></noscript>{children}</body>
     </html>
