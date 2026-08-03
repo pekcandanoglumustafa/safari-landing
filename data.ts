@@ -8,7 +8,7 @@ export const toTL = (e: number) => (Math.round((e*EUR_TRY)/10)*10).toLocaleStrin
 
 export type Pkg = {
   slug: string; name: string; tagline: string; price: number; oldPrice?: number;
-  duration: string; hero: string; gallery: string[];
+  duration: string; durKey: "dur2h" | "dur34h"; hero: string; gallery: string[];
   intro: string; highlights: string[]; includes: string[];
   program: { t: string; x: string }[]; faq: { q: string; a: string }[];
 };
@@ -19,7 +19,7 @@ export const PKGS: Pkg[] = [
     slug: "buggy-safari",
     name: "Buggy Safari",
     tagline: "Kafesli buggy ile çamur, toz ve tam gaz adrenalin",
-    price: 22, oldPrice: 40, duration: "2 saat · Her gün",
+    price: 22, oldPrice: 40, duration: "2 saat · Her gün", durKey: "dur2h",
     hero: "/img/buggy-1.jpg",
     gallery: ["/img/buggy-1.jpg","/img/buggy-2.jpg","/img/buggy-3.jpg","/img/buggy-4.jpg","/img/buggy-5.jpg","/img/buggy-6.jpg"],
     intro: "Toros eteklerinde çift kişilik kafesli buggy ile 2 saatlik toz-çamur macerası. Dere yataklarından geçiyor, çamur havuzlarına dalıyor, tepelere tırmanıyorsun. Ehliyet gerekmez, kask ve tüm ekipman bizden. Kirlenme garantili!",
@@ -32,7 +32,7 @@ export const PKGS: Pkg[] = [
     slug: "quad-safari",
     name: "Quad Safari",
     tagline: "Toz duman ATV ile 2 saatlik off-road macera",
-    price: 19, oldPrice: 30, duration: "2 saat · Her gün",
+    price: 19, oldPrice: 30, duration: "2 saat · Her gün", durKey: "dur2h",
     hero: "/img/quad-1.jpg",
     gallery: ["/img/quad-1.jpg","/img/quad-2.jpg","/img/quad-3.jpg","/img/quad-4.jpg","/img/quad-5.jpg","/img/quad-6.jpg"],
     intro: "Kendi quad'ını (ATV) sür, Toros manzaralı tepelere tırman, dere yataklarından toz ve su sıçratarak geç. Yaklaşık 2 saatlik parkurda adrenalin hiç düşmüyor. Ehliyet gerekmez, kask ve ekipman dahil.",
@@ -45,7 +45,7 @@ export const PKGS: Pkg[] = [
     slug: "family-buggy-safari",
     name: "Family Buggy Safari",
     tagline: "Tüm aile tek buggy'de — 4 kişilik güvenli macera",
-    price: 40, duration: "3-4 saat · Her gün",
+    price: 40, duration: "3-4 saat · Her gün", durKey: "dur34h",
     hero: "/img/aile_buggy-1.jpg",
     gallery: ["/img/aile_buggy-1.jpg","/img/aile_buggy-2.jpg","/img/aile_buggy-3.jpg","/img/aile_buggy-4.jpg","/img/aile_buggy-5.jpg","/img/aile_buggy-6.jpg"],
     intro: "Ailece maceraya çıkmak isteyenler için 4 kişilik geniş kafesli buggy. Anne, baba ve çocuklar aynı araçta, güvenli kafes içinde çamur ve tozun tadını çıkarıyor. Fiyat araç başıdır — tüm aile tek ücrete dahil.",

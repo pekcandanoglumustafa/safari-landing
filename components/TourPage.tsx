@@ -65,7 +65,7 @@ export default function TourPage({ slug, locale }: { slug: string; locale: Local
         </div>
         <div className="relative mx-auto max-w-5xl px-4 py-14">
           <Link href={base || "/"} className="text-sm text-white/80 hover:text-white">← {t.back}</Link>
-          <p className="mt-3 inline-block rounded-full bg-white/20 px-4 py-1 text-sm font-bold backdrop-blur">{p.duration}</p>
+          <p className="mt-3 inline-block rounded-full bg-white/20 px-4 py-1 text-sm font-bold backdrop-blur">{t[p.durKey]}</p>
           <h1 className="display mt-2 text-4xl font-extrabold md:text-5xl">{name}</h1>
           <p className="mt-2 max-w-xl text-lg text-white/90">{tagline}</p>
         </div>

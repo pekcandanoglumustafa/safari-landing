@@ -83,7 +83,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
                 <Image src={p.hero} alt={p.name} fill sizes="(max-width:768px) 100vw, 33vw" className="card-img object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-                  <span className="mb-2 inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-semibold backdrop-blur">{p.duration}</span>
+                  <span className="mb-2 inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-semibold backdrop-blur">{t[p.durKey]}</span>
                   <h3 className="display text-2xl font-extrabold">{pkgText(locale, p.slug)?.name ?? p.name}</h3>
                   <p className="mt-1 text-sm text-white/85">{pkgText(locale, p.slug)?.tagline ?? p.tagline}</p>
                   <div className="mt-4 flex items-center justify-between border-t border-white/20 pt-3">

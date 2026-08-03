@@ -27,6 +27,8 @@ type Dict = {
   firmTitle: string; firm: string; cert: string; addr: string; phone: string;
   footerNote: string;
   menu: string;
+  dur2h: string;
+  dur34h: string;
   barCall: string;
   barWhats: string;
   certNote: string;
@@ -64,6 +66,8 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Firma Bilgileri", firm: "Firma", cert: "TÜRSAB Belge No", addr: "Adres", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menü",
+    dur2h: "2 saat · Her gün",
+    dur34h: "3-4 saat · Her gün",
     barCall: "Ara",
     barWhats: "WhatsApp",
     certNote: "A Grubu Seyahat Acentası",
@@ -99,6 +103,8 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Company Details", firm: "Company", cert: "TÜRSAB Licence No", addr: "Address", phone: "Phone",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menu",
+    dur2h: "2 hours · Daily",
+    dur34h: "3-4 hours · Daily",
     barCall: "Call",
     barWhats: "WhatsApp",
     certNote: "A-Class Travel Agency",
@@ -134,6 +140,8 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Firmendaten", firm: "Firma", cert: "TÜRSAB-Lizenznummer", addr: "Adresse", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menü",
+    dur2h: "2 Stunden · Täglich",
+    dur34h: "3-4 Stunden · Täglich",
     barCall: "Anrufen",
     barWhats: "WhatsApp",
     certNote: "Reisebüro Klasse A",
@@ -169,6 +177,8 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Данные компании", firm: "Компания", cert: "Лицензия TÜRSAB", addr: "Адрес", phone: "Телефон",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Меню",
+    dur2h: "2 часа · Ежедневно",
+    dur34h: "3-4 часа · Ежедневно",
     barCall: "Позвонить",
     barWhats: "WhatsApp",
     certNote: "Турагентство класса А",
@@ -204,6 +214,8 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Dane firmy", firm: "Firma", cert: "Numer licencji TÜRSAB", addr: "Adres", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menu",
+    dur2h: "2 godziny · Codziennie",
+    dur34h: "3-4 godziny · Codziennie",
     barCall: "Zadzwoń",
     barWhats: "WhatsApp",
     certNote: "Biuro podróży klasy A",
