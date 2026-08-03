@@ -26,13 +26,49 @@ export default function TourPage({ slug, locale }: { slug: string; locale: Local
   const includes = tr?.includes ?? p.includes;
   const program = tr?.program ?? p.program;
   const wa = `${CONTACT.whatsapp}?text=${encodeURIComponent(locale === "tr" ? `Merhaba, "${name}" için rezervasyon yapmak istiyorum. Tarih ve kişi sayısı: ` : `Hello, I would like to book "${name}". Date and number of people: `)}`;
+  const SITE_URL = "https://www.sidequadbuggy.com";
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Product", name, description: seo?.intro ?? p.intro, image: p.gallery,
-        offers: { "@type": "Offer", price: p.price, priceCurrency: "EUR", availability: "https://schema.org/InStock" },
-        aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "120" } },
-      { "@type": "FAQPage", mainEntity: faqList.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+      {
+        "@type": "Product",
+        name,
+        description: seo?.intro ?? p.intro,
+        image: p.gallery.map((g) => `${SITE_URL}${g}`),
+        brand: { "@type": "Brand", name: "Side Quad Buggy Safari" },
+        offers: {
+          "@type": "Offer",
+          price: p.price,
+          priceCurrency: "EUR",
+          availability: "https://schema.org/InStock",
+          url: `${SITE_URL}${base}/tur/${slug}`,
+          priceValidUntil: "2027-12-31",
+          seller: { "@type": "TravelAgency", name: "Sonnenklar Reisen Turizm" },
+        },
+      },
+      {
+        "@type": "TouristAttraction",
+        name,
+        description: tagline,
+        image: `${SITE_URL}${p.hero}`,
+        touristType: ["Adventure", "Family"],
+        isAccessibleForFree: false,
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqList.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Side Quad Buggy Safari", item: `${SITE_URL}${base || ""}` },
+          { "@type": "ListItem", position: 2, name },
+        ],
+      },
     ],
   };
 
