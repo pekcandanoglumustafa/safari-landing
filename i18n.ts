@@ -27,6 +27,9 @@ type Dict = {
   firmTitle: string; firm: string; cert: string; addr: string; phone: string;
   footerNote: string;
   menu: string;
+  barCall: string;
+  barWhats: string;
+  certNote: string;
 };
 
 export const T: Record<Locale, Dict> = {
@@ -61,6 +64,9 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Firma Bilgileri", firm: "Firma", cert: "TÜRSAB Belge No", addr: "Adres", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menü",
+    barCall: "Ara",
+    barWhats: "WhatsApp",
+    certNote: "A Grubu Seyahat Acentası",
   },
   en: {
     navPackages: "Packages", navFaq: "FAQ", navContact: "Contact",
@@ -93,6 +99,9 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Company Details", firm: "Company", cert: "TÜRSAB Licence No", addr: "Address", phone: "Phone",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menu",
+    barCall: "Call",
+    barWhats: "WhatsApp",
+    certNote: "A-Class Travel Agency",
   },
   de: {
     navPackages: "Pakete", navFaq: "FAQ", navContact: "Kontakt",
@@ -125,6 +134,9 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Firmendaten", firm: "Firma", cert: "TÜRSAB-Lizenznummer", addr: "Adresse", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menü",
+    barCall: "Anrufen",
+    barWhats: "WhatsApp",
+    certNote: "Reisebüro Klasse A",
   },
   ru: {
     navPackages: "Туры", navFaq: "Вопросы", navContact: "Контакты",
@@ -157,6 +169,9 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Данные компании", firm: "Компания", cert: "Лицензия TÜRSAB", addr: "Адрес", phone: "Телефон",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Меню",
+    barCall: "Позвонить",
+    barWhats: "WhatsApp",
+    certNote: "Турагентство класса А",
   },
   pl: {
     navPackages: "Pakiety", navFaq: "FAQ", navContact: "Kontakt",
@@ -189,5 +204,8 @@ export const T: Record<Locale, Dict> = {
     firmTitle: "Dane firmy", firm: "Firma", cert: "Numer licencji TÜRSAB", addr: "Adres", phone: "Telefon",
     footerNote: "TÜRSAB 9030 · Sonnenklar Reisen Turizm",
     menu: "Menu",
+    barCall: "Zadzwoń",
+    barWhats: "WhatsApp",
+    certNote: "Biuro podróży klasy A",
   },
 };

@@ -12,9 +12,11 @@ const M: Record<string, { t: string; d: string }> = {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const m = M[locale];
+  const ogLocale: Record<string, string> = { en: "en_GB", de: "de_DE", ru: "ru_RU", pl: "pl_PL" };
   return {
     title: m.t, description: m.d,
     alternates: { canonical: `/${locale}`, languages: { tr: "/", en: "/en", de: "/de", ru: "/ru", pl: "/pl" } },
+    openGraph: { type: "website", locale: ogLocale[locale], title: m.t, description: m.d, images: ["/img/buggy-1.jpg"] },
   };
 }
 

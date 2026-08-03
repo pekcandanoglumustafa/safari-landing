@@ -50,16 +50,15 @@ export default function HomePage({ locale }: { locale: Locale }) {
             {t.heroTitle1} <span className="glow text-orange">{t.heroTitleGlow}</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/90">
-            Quad, Buggy ve Aile Buggy safari — Side ve Manavgat çıkışlı, Toros eteklerinde 2 saatlik off-road macera.
-            Otelden ücretsiz alma-bırakma, ödeme tur günü. Ehliyet gerekmez!
+            {t.heroText}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#paketler" className="pulse rounded-full bg-orange px-7 py-3.5 font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-orange-dark">
-              Paketleri Gör
+              {t.ctaPackages}
             </a>
             <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1"
                className="rounded-full bg-wa px-7 py-3.5 font-bold text-white hover:bg-wa-dark">
-              Hemen Rezervasyon
+              {t.ctaBook}
             </a>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white">
@@ -96,7 +95,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
                       <span className="block text-xs font-semibold text-white/85">{toTL(p.price)} ₺</span>
                     </span>
                     <span className="rounded-full bg-orange px-4 py-2 text-sm font-bold text-white transition group-hover:bg-orange-dark">
-                      İncele →
+                      {t.view} →
                     </span>
                   </div>
                 </div>
@@ -151,8 +150,8 @@ export default function HomePage({ locale }: { locale: Locale }) {
 
       {/* Sabit mobil CTA */}
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 md:hidden">
-        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-[#e01f26] py-4 font-bold text-white">📞 Ara</a>
-        <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">WhatsApp</a>
+        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-[#e01f26] py-4 font-bold text-white">📞 {t.barCall}</a>
+        <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">{t.barWhats}</a>
       </div>
     </>
   );

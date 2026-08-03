@@ -83,8 +83,8 @@ export default function FaqPage({ locale }: { locale: Locale }) {
 
       <FloatingWhats />
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 md:hidden">
-        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-[#e01f26] py-4 font-bold text-white">📞 Ara</a>
-        <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">WhatsApp</a>
+        <a href={`tel:${CONTACT.phoneIntl}`} className="flex items-center justify-center gap-2 bg-[#e01f26] py-4 font-bold text-white">📞 {t.barCall}</a>
+        <a href={CONTACT.whatsapp} target="_blank" rel="noopener" data-wa="1" className="flex items-center justify-center gap-2 bg-wa py-4 font-bold text-white">{t.barWhats}</a>
       </div>
     </>
   );

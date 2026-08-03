@@ -21,7 +21,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical: `/${locale}/tur/${slug}`,
       languages: { tr: `/tur/${slug}`, en: `/en/tur/${slug}`, de: `/de/tur/${slug}`, ru: `/ru/tur/${slug}`, pl: `/pl/tur/${slug}` },
     },
-    openGraph: { title: name, description: tr?.tagline ?? p.tagline, images: [p.hero] },
+    openGraph: {
+      type: "website",
+      locale: ({ en: "en_GB", de: "de_DE", ru: "ru_RU", pl: "pl_PL" } as Record<string, string>)[locale],
+      title: name, description: tr?.tagline ?? p.tagline, images: [p.hero],
+    },
   };
 }
 
