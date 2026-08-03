@@ -37,7 +37,8 @@ export default function LangSwitcher({ locale = "tr" as Locale }: { locale?: Loc
       {open && (
         <div className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-xl bg-white py-1 shadow-xl ring-1 ring-black/10">
           {LOCALES.map((l) => (
-            <Link key={l} href={hrefFor(l)} onClick={() => setOpen(false)}
+            <Link key={l} href={hrefFor(l)}
+              onClick={() => { document.cookie = `lang=${l}; path=/; max-age=31536000`; setOpen(false); }}
               className={`flex w-full items-center gap-2.5 px-4 py-2.5 text-sm hover:bg-orange/10 ${locale === l ? "font-bold text-navy" : "text-ink/80"}`}>
               <span className="text-base">{META[l].flag}</span>{META[l].label}
             </Link>

@@ -131,7 +131,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           </a>
           <a href={`tel:${CONTACT.phoneIntl}`}
              className="rounded-full bg-navy px-7 py-3.5 font-bold text-white hover:bg-deep">
-            Hemen Ara
+            {t.call}
           </a>
         </div>
       </section>
