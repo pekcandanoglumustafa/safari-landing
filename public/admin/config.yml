@@ -2,7 +2,6 @@ backend:
   name: github
   repo: pekcandanoglumustafa/safari-landing
   branch: main
-  base_url: https://sveltia-cms-auth.pekcandanoglumustafa.workers.dev
 
 publish_mode: simple
 media_folder: "public/img"
