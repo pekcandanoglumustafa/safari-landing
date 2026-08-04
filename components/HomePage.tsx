@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Tick from "@/components/Tick";
-import { PKGS, CONTACT, toTL } from "@/data";
+import { paketler, CONTACT, toTL } from "@/data";
 import { T, type Locale } from "@/i18n";
 import MobileMenu from "@/components/MobileMenu";
-import { pkgText } from "@/pkg-i18n";
+
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
 
 export default function HomePage({ locale }: { locale: Locale }) {
   const t = T[locale];
+  const PKGS = paketler(locale);
   const base = locale === "tr" ? "" : `/${locale}`;
   return (
     <>
@@ -84,8 +85,8 @@ export default function HomePage({ locale }: { locale: Locale }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-5 text-white">
                   <span className="mb-2 inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-semibold backdrop-blur">{t[p.durKey]}</span>
-                  <h3 className="display text-2xl font-extrabold">{pkgText(locale, p.slug)?.name ?? p.name}</h3>
-                  <p className="mt-1 text-sm text-white/85">{pkgText(locale, p.slug)?.tagline ?? p.tagline}</p>
+                  <h3 className="display text-2xl font-extrabold">{p.name}</h3>
+                  <p className="mt-1 text-sm text-white/85">{p.tagline}</p>
                   <div className="mt-4 flex items-center justify-between border-t border-white/20 pt-3">
                     <span className="text-right">
                       <span className="flex items-baseline gap-1.5">

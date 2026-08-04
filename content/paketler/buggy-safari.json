@@ -1,0 +1,601 @@
+{
+  "slug": "buggy-safari",
+  "sira": 0,
+  "fiyat": 22,
+  "eskiFiyat": 40,
+  "sure": "dur2h",
+  "kapak": "/img/buggy-1.jpg",
+  "galeri": [
+    "/img/buggy-1.jpg",
+    "/img/buggy-2.jpg",
+    "/img/buggy-3.jpg",
+    "/img/buggy-4.jpg",
+    "/img/buggy-5.jpg",
+    "/img/buggy-6.jpg"
+  ],
+  "diller": {
+    "tr": {
+      "ad": "Buggy Safari",
+      "slogan": "Kafesli buggy ile çamur, toz ve tam gaz adrenalin",
+      "giris": "Tatilinizi sıradan aktivitelerin ötesine taşımak istiyorsanız Side Buggy Safari, adrenalin ve keşfi bir araya getiren en popüler macera turlarından biridir. Toros Dağları'nın doğal parkurlarında gerçekleştirilen bu özel tur boyunca toprak yollar, çamurlu geçişler, su birikintileri ve engebeli arazilerde sürüş yaparak gerçek bir off-road deneyimi yaşayabilirsiniz. Çam ormanlarının arasından uzanan rota, bölgenin doğal güzelliklerini farklı bir bakış açısıyla keşfetmek isteyen misafirlere eşsiz anlar sunar.",
+      "oneCikanlar": [
+        "Çift kişilik kafesli buggy",
+        "Çamur havuzları ve dere geçişleri",
+        "2 saat dolu dolu parkur",
+        "Ehliyet gerekmez",
+        "Otelden ücretsiz alma-bırakma"
+      ],
+      "fiyataDahil": [
+        "Otelden alma-bırakma",
+        "Buggy ve kask",
+        "Rehber eşliğinde parkur",
+        "Sigorta"
+      ],
+      "program": [
+        {
+          "baslik": "Alınış",
+          "aciklama": "Otelinizden servis ile alınıyorsunuz"
+        },
+        {
+          "baslik": "Brifing",
+          "aciklama": "Kısa güvenlik eğitimi ve ekipman"
+        },
+        {
+          "baslik": "Parkur",
+          "aciklama": "2 saat çamur, toz, dere geçişleri"
+        },
+        {
+          "baslik": "Dönüş",
+          "aciklama": "Yıkanma molası sonrası otele bırakış"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Daha Önce Buggy Kullanmadıysanız Endişelenmeyin",
+          "paragraflar": [
+            "Side Buggy Tour, ilk kez arazi aracı deneyimi yaşayacak misafirler de düşünülerek planlanmıştır. Tur başlamadan önce deneyimli ekibimiz tarafından araç kullanımı, güvenlik kuralları ve parkur hakkında detaylı bilgi verilir. Ardından kısa bir deneme sürüşü yapılır ve kendinizi hazır hissettiğinizde rehberlerimiz eşliğinde safariye başlanır.",
+            "Kullanımı oldukça pratik olan buggy araçları sayesinde kısa sürede araca alışabilir, sürüş boyunca yalnızca eğlenceye ve doğanın tadını çıkarmaya odaklanabilirsiniz."
+          ]
+        },
+        {
+          "baslik": "Doğal Parkurlarda Macera Dolu Sürüş",
+          "paragraflar": [
+            "Özel olarak hazırlanan rota boyunca çam ormanlarının içinden geçecek, toprak yolları takip edecek ve zaman zaman çamurlu bölümlerde sürüş yapacaksınız. Doğal arazi şartları turun her bölümünü farklı ve heyecan verici hale getirirken, arkadaşlarınız veya ailenizle birlikte keyif dolu anılar biriktireceksiniz.",
+            "Buggy Safari boyunca tüm grup rehberlerimiz eşliğinde konvoy düzeninde ilerler. Böylece hem güvenli hem de düzenli bir sürüş deneyimi yaşayabilirsiniz."
+          ]
+        },
+        {
+          "baslik": "Gölette Serinleme ve Dinlenme Molası",
+          "paragraflar": [
+            "Safari sırasında doğal bir gölet kenarında kısa bir mola veriyoruz. Bu molada serin sularda yüzebilir, çevrede yürüyüş yapabilir ya da doğanın sakin atmosferinde dinlenerek yeni etap için enerji toplayabilirsiniz.",
+            "Toros Dağları'nın temiz havası ve huzurlu ortamı, bu molayı turun en keyifli anlarından biri hâline getirir. Tur programımızda yemek servisi bulunmamaktadır."
+          ]
+        },
+        {
+          "baslik": "Profesyonel Fotoğraf ve Video Hizmeti",
+          "paragraflar": [
+            "En güzel anlarınızı kaydetmek için sürüş sırasında telefon veya kamera kullanmanıza gerek yoktur. Profesyonel ekibimiz, tur boyunca yaşadığınız en heyecanlı anları kaliteli fotoğraf ve videolarla ölümsüzleştirir.",
+            "Tur sonunda isterseniz bu görüntüleri satın alabilir ve Side'de yaşadığınız bu özel deneyimi yıllar sonra bile aynı heyecanla hatırlayabilirsiniz."
+          ]
+        },
+        {
+          "baslik": "Neden Side Buggy Safari'yi Tercih Etmelisiniz?",
+          "paragraflar": [
+            "Gerçek off-road parkurları, deneyimli rehberler, ücretsiz otel transferi ve güvenli organizasyon anlayışı sayesinde Buggy Tour, Side'de en çok tercih edilen macera aktiviteleri arasında yer almaktadır.",
+            "İster arkadaş grubunuzla ister ailenizle katılın, doğayla iç içe geçireceğiniz bu deneyim tatilinize farklı bir heyecan katacak ve unutulmaz anılarla evinize dönmenizi sağlayacaktır."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Daha önce hiç buggy kullanmadım. Katılabilir miyim?",
+          "cevap": "Kesinlikle! Buggy araçları kullanımı oldukça kolay araçlardır. Tur öncesinde kısa bir eğitim ve deneme sürüşü yapılıyor. Birkaç dakika sonra çoğu misafirimiz aracı rahatlıkla kullanmaya başlıyor."
+        },
+        {
+          "soru": "Buggy kullanmak için ehliyet gerekiyor mu?",
+          "cevap": "Hayır. Bu aktivite için ehliyet zorunlu değildir. Güvenlik kurallarına uymanız ve rehberlerimizin talimatlarını takip etmeniz yeterlidir."
+        },
+        {
+          "soru": "Buggy Safari ne kadar sürüyor?",
+          "cevap": "Turumuz yaklaşık 2 saat sürmektedir ve bu süreye gölette verdiğimiz mola da dahildir. Eğlence başladığında zamanın nasıl geçtiğini fark etmeyebilirsiniz. 😊"
+        },
+        {
+          "soru": "Araçlar tek kişilik mi?",
+          "cevap": "Buggy araçlarımız iki kişiliktir. İsterseniz dönüşümlü olarak sürüş yapabilir, isterseniz yolculuğun keyfini çıkarabilirsiniz."
+        },
+        {
+          "soru": "Üzerimiz kirlenir mi?",
+          "cevap": "Evet, biraz kirlenebilirsiniz. Çamur, toprak ve su geçişleri bu turun en eğlenceli kısmıdır. Eve temiz kıyafetlerle dönebilirsiniz ama bu kadar güzel anıları başka yerde bulmak zor olur. 😄"
+        },
+        {
+          "soru": "Gölette yüzme molası var mı?",
+          "cevap": "Evet. Tur sırasında doğal gölette mola veriyoruz. İsteyen misafirler yüzebilir, isteyenler ise manzaranın tadını çıkarabilir."
+        },
+        {
+          "soru": "Yemek veriliyor mu?",
+          "cevap": "Hayır. Tur programımıza yemek dahil değildir."
+        },
+        {
+          "soru": "Fotoğraf ve video çekiliyor mu?",
+          "cevap": "Evet. Profesyonel ekibimiz turun en güzel anlarını kayıt altına alır. Tur sonunda dileyen misafirler görüntüleri satın alabilir."
+        },
+        {
+          "soru": "Telefon kullanabilir miyim?",
+          "cevap": "Telefonunuzu yanınızda bulundurabilirsiniz ancak sürüş sırasında kullanmamanızı tavsiye ediyoruz. Önce güvenlik, sonra selfie! 😊"
+        },
+        {
+          "soru": "Transfer hizmeti var mı?",
+          "cevap": "Evet. Side ve çevresindeki otellerden ücretsiz gidiş-dönüş transfer hizmeti sunuyoruz."
+        },
+        {
+          "soru": "Ön ödeme gerekiyor mu?",
+          "cevap": "Hayır. Rezervasyon için ön ödeme istemiyoruz. Ödemenizi tur günü güvenle yapabilirsiniz."
+        },
+        {
+          "soru": "Buggy Safari bana uygun mu?",
+          "cevap": "Doğayı, eğlenceyi ve biraz çamuru seviyorsanız cevabımız kesinlikle evet!"
+        }
+      ]
+    },
+    "en": {
+      "ad": "Buggy Safari",
+      "slogan": "Mud, dust and full throttle in a caged buggy",
+      "giris": "If you want more than the usual holiday activities, Side Buggy Safari is one of the most popular adventure tours that combines adrenaline and discovery. Along the natural trails of the Taurus mountains you will drive over dirt roads, muddy sections, water crossings and uneven terrain for a genuine off-road experience. The route winding through pine forests offers a completely different way to discover the natural beauty of the region.",
+      "oneCikanlar": [
+        "Two-seater caged buggy",
+        "Mud pools and stream crossings",
+        "2 hours of packed trail",
+        "No licence required",
+        "Free hotel pick-up and drop-off"
+      ],
+      "fiyataDahil": [
+        "Hotel pick-up and drop-off",
+        "Buggy and helmet",
+        "Guided trail",
+        "Insurance"
+      ],
+      "program": [
+        {
+          "baslik": "Pick-up",
+          "aciklama": "We collect you from your hotel by shuttle"
+        },
+        {
+          "baslik": "Briefing",
+          "aciklama": "Short safety training and equipment"
+        },
+        {
+          "baslik": "The trail",
+          "aciklama": "2 hours of mud, dust and stream crossings"
+        },
+        {
+          "baslik": "Return",
+          "aciklama": "Wash-up break, then back to your hotel"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Never Driven a Buggy Before? No Problem",
+          "paragraflar": [
+            "Side Buggy Tour is planned with first-time drivers in mind. Before the tour our experienced team explains how to handle the vehicle, the safety rules and the route in detail. After a short practice run, we set off with our guides as soon as you feel ready.",
+            "Buggies are very easy to operate, so you will get used to the vehicle within minutes and can focus entirely on the fun and the nature around you."
+          ]
+        },
+        {
+          "baslik": "Adventure on Genuine Off-Road Trails",
+          "paragraflar": [
+            "Along the specially prepared route you will drive through pine forests, follow dirt tracks and splash through muddy sections. The natural terrain makes every part of the tour different and exciting while you collect great memories with friends or family.",
+            "Throughout the safari the whole group travels in convoy with our guides, so the ride stays both safe and well organised."
+          ]
+        },
+        {
+          "baslik": "Swim and Rest Stop at the Pond",
+          "paragraflar": [
+            "Halfway through the safari we stop by a natural pond. You can swim in the cool water, take a short walk nearby or simply relax in the calm atmosphere and recharge for the next leg.",
+            "The clean air and peaceful surroundings of the Taurus mountains make this one of the nicest moments of the tour. Please note that meals are not included in our programme."
+          ]
+        },
+        {
+          "baslik": "Professional Photo and Video Service",
+          "paragraflar": [
+            "You don't need to carry a phone or camera during the ride. Our professional team captures the most exciting moments in high quality photos and videos.",
+            "At the end of the tour you can purchase these images if you wish, and remember this special day in Side with the same excitement years later."
+          ]
+        },
+        {
+          "baslik": "Why Choose Side Buggy Safari?",
+          "paragraflar": [
+            "Real off-road trails, experienced guides, free hotel transfer and a safety-first organisation make Buggy Tour one of the most preferred adventure activities in Side.",
+            "Whether you come with friends or family, this experience in the middle of nature will add a completely different thrill to your holiday."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "I have never driven a buggy. Can I join?",
+          "cevap": "Absolutely. Buggies are very easy to drive. We give a short training and a practice run before the tour, and most guests are comfortable within a few minutes."
+        },
+        {
+          "soru": "Do I need a driving licence?",
+          "cevap": "No. A licence is not required for this activity. You only need to follow the safety rules and our guides' instructions."
+        },
+        {
+          "soru": "How long does the Buggy Safari take?",
+          "cevap": "The tour lasts about 2 hours including the stop at the pond. Once the fun starts, time flies. 😊"
+        },
+        {
+          "soru": "Are the vehicles single seaters?",
+          "cevap": "Our buggies are two-seaters. You can take turns driving or simply enjoy the ride as a passenger."
+        },
+        {
+          "soru": "Will we get dirty?",
+          "cevap": "Yes, a little. Mud, dust and water crossings are the most fun part of this tour. Clothes can be washed, but memories like these are harder to find. 😄"
+        },
+        {
+          "soru": "Is there a swimming stop?",
+          "cevap": "Yes. We stop at a natural pond during the tour. You can swim or simply enjoy the view."
+        },
+        {
+          "soru": "Are meals included?",
+          "cevap": "No, meals are not included in our programme."
+        },
+        {
+          "soru": "Are photos and videos taken?",
+          "cevap": "Yes. Our professional team records the best moments. You can purchase the images at the end of the tour if you wish."
+        },
+        {
+          "soru": "Is transfer included?",
+          "cevap": "Yes. We offer free round-trip transfers from hotels in Side and the surrounding area."
+        },
+        {
+          "soru": "Do I need to pay in advance?",
+          "cevap": "No. We don't ask for prepayment. You can pay safely on the day of the tour."
+        }
+      ]
+    },
+    "de": {
+      "ad": "Buggy Safari",
+      "slogan": "Schlamm, Staub und Vollgas im Käfig-Buggy",
+      "giris": "Wenn Sie mehr als die üblichen Urlaubsaktivitäten erleben möchten, ist die Side Buggy Safari eine der beliebtesten Abenteuertouren, die Adrenalin und Entdeckung verbindet. Auf den Naturpisten des Taurusgebirges fahren Sie über Feldwege, schlammige Abschnitte, Bachdurchfahrten und unebenes Gelände — echtes Offroad-Erlebnis. Die Route durch die Pinienwälder zeigt Ihnen die Naturschönheiten der Region aus einer ganz neuen Perspektive.",
+      "oneCikanlar": [
+        "Zweisitziger Käfig-Buggy",
+        "Schlammlöcher und Bachdurchfahrten",
+        "2 Stunden volle Strecke",
+        "Kein Führerschein nötig",
+        "Kostenlose Hotelabholung"
+      ],
+      "fiyataDahil": [
+        "Hotelabholung und -rückfahrt",
+        "Buggy und Helm",
+        "Geführte Tour",
+        "Versicherung"
+      ],
+      "program": [
+        {
+          "baslik": "Abholung",
+          "aciklama": "Wir holen Sie mit dem Shuttle vom Hotel ab"
+        },
+        {
+          "baslik": "Briefing",
+          "aciklama": "Kurze Sicherheitseinweisung und Ausrüstung"
+        },
+        {
+          "baslik": "Die Strecke",
+          "aciklama": "2 Stunden Schlamm, Staub und Bachdurchfahrten"
+        },
+        {
+          "baslik": "Rückkehr",
+          "aciklama": "Nach der Waschpause zurück zum Hotel"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Noch nie Buggy gefahren? Kein Problem",
+          "paragraflar": [
+            "Die Side Buggy Tour ist auch für Gäste geplant, die zum ersten Mal ein Geländefahrzeug fahren. Vor der Tour erklärt unser erfahrenes Team die Bedienung, die Sicherheitsregeln und die Strecke im Detail. Nach einer kurzen Proberunde starten wir mit unseren Guides, sobald Sie sich bereit fühlen.",
+            "Buggys sind sehr einfach zu bedienen, sodass Sie sich innerhalb weniger Minuten an das Fahrzeug gewöhnen und sich ganz auf den Spaß und die Natur konzentrieren können."
+          ]
+        },
+        {
+          "baslik": "Abenteuer auf echten Offroad-Pisten",
+          "paragraflar": [
+            "Auf der eigens vorbereiteten Route fahren Sie durch Pinienwälder, folgen Feldwegen und durchqueren schlammige Abschnitte. Das natürliche Gelände macht jeden Teil der Tour anders und aufregend, während Sie mit Freunden oder Familie schöne Erinnerungen sammeln.",
+            "Während der gesamten Safari fährt die Gruppe im Konvoi mit unseren Guides — so bleibt die Fahrt sicher und gut organisiert."
+          ]
+        },
+        {
+          "baslik": "Bade- und Rastpause am Teich",
+          "paragraflar": [
+            "Mitten in der Safari legen wir eine Pause an einem natürlichen Teich ein. Sie können im kühlen Wasser schwimmen, einen kurzen Spaziergang machen oder einfach in der ruhigen Atmosphäre entspannen und neue Energie tanken.",
+            "Die frische Luft und die friedliche Umgebung des Taurusgebirges machen diese Pause zu einem der schönsten Momente der Tour. Mahlzeiten sind in unserem Programm nicht enthalten."
+          ]
+        },
+        {
+          "baslik": "Professioneller Foto- und Videoservice",
+          "paragraflar": [
+            "Sie müssen während der Fahrt kein Handy und keine Kamera mitnehmen. Unser professionelles Team hält die aufregendsten Momente in hochwertigen Fotos und Videos fest.",
+            "Am Ende der Tour können Sie diese Aufnahmen erwerben und sich noch Jahre später mit derselben Begeisterung an diesen besonderen Tag in Side erinnern."
+          ]
+        },
+        {
+          "baslik": "Warum die Side Buggy Safari wählen?",
+          "paragraflar": [
+            "Echte Offroad-Pisten, erfahrene Guides, kostenloser Hoteltransfer und eine Organisation, bei der Sicherheit an erster Stelle steht, machen die Buggy Tour zu einer der beliebtesten Abenteueraktivitäten in Side.",
+            "Ob mit Freunden oder mit der Familie — dieses Erlebnis mitten in der Natur bringt einen ganz anderen Nervenkitzel in Ihren Urlaub."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Ich bin noch nie Buggy gefahren. Kann ich mitmachen?",
+          "cevap": "Auf jeden Fall. Buggys sind sehr einfach zu fahren. Vor der Tour gibt es eine kurze Einweisung und eine Proberunde — die meisten Gäste kommen nach wenigen Minuten gut zurecht."
+        },
+        {
+          "soru": "Brauche ich einen Führerschein?",
+          "cevap": "Nein. Für diese Aktivität ist kein Führerschein erforderlich. Sie müssen nur die Sicherheitsregeln und die Anweisungen unserer Guides befolgen."
+        },
+        {
+          "soru": "Wie lange dauert die Buggy Safari?",
+          "cevap": "Die Tour dauert etwa 2 Stunden inklusive der Pause am Teich. Wenn der Spaß beginnt, vergeht die Zeit wie im Flug. 😊"
+        },
+        {
+          "soru": "Sind die Fahrzeuge Einsitzer?",
+          "cevap": "Unsere Buggys sind Zweisitzer. Sie können sich beim Fahren abwechseln oder die Fahrt einfach als Beifahrer genießen."
+        },
+        {
+          "soru": "Werden wir schmutzig?",
+          "cevap": "Ja, ein bisschen. Schlamm, Staub und Wasserdurchfahrten sind der schönste Teil dieser Tour. Kleidung kann man waschen, solche Erinnerungen findet man seltener. 😄"
+        },
+        {
+          "soru": "Gibt es eine Badepause?",
+          "cevap": "Ja. Während der Tour halten wir an einem natürlichen Teich. Sie können schwimmen oder einfach die Aussicht genießen."
+        },
+        {
+          "soru": "Sind Mahlzeiten inklusive?",
+          "cevap": "Nein, Mahlzeiten sind in unserem Programm nicht enthalten."
+        },
+        {
+          "soru": "Werden Fotos und Videos gemacht?",
+          "cevap": "Ja. Unser professionelles Team hält die besten Momente fest. Am Ende der Tour können Sie die Aufnahmen erwerben."
+        },
+        {
+          "soru": "Ist der Transfer inklusive?",
+          "cevap": "Ja. Wir bieten kostenlose Hin- und Rücktransfers von Hotels in Side und Umgebung."
+        },
+        {
+          "soru": "Muss ich im Voraus zahlen?",
+          "cevap": "Nein. Wir verlangen keine Anzahlung. Sie zahlen sicher am Tag der Tour."
+        }
+      ]
+    },
+    "ru": {
+      "ad": "Багги сафари",
+      "slogan": "Грязь, пыль и полный газ в багги с каркасом",
+      "giris": "Если вы хотите чего-то большего, чем обычные курортные развлечения, багги-сафари в Сиде — один из самых популярных туров, сочетающих адреналин и открытия. По природным трассам гор Тавр вы поедете по грунтовым дорогам, грязевым участкам, бродам и неровному рельефу — это настоящий офф-роуд. Маршрут через сосновые леса покажет вам красоту региона с совершенно новой стороны.",
+      "oneCikanlar": [
+        "Двухместное багги с каркасом",
+        "Грязевые ванны и броды",
+        "2 часа насыщенной трассы",
+        "Права не нужны",
+        "Бесплатный трансфер из отеля"
+      ],
+      "fiyataDahil": [
+        "Трансфер из отеля и обратно",
+        "Багги и шлем",
+        "Сопровождение гида",
+        "Страховка"
+      ],
+      "program": [
+        {
+          "baslik": "Выезд",
+          "aciklama": "Забираем вас из отеля на трансфере"
+        },
+        {
+          "baslik": "Инструктаж",
+          "aciklama": "Короткий инструктаж и снаряжение"
+        },
+        {
+          "baslik": "Трасса",
+          "aciklama": "2 часа грязи, пыли и бродов"
+        },
+        {
+          "baslik": "Возвращение",
+          "aciklama": "После остановки на мойку — обратно в отель"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Никогда не водили багги? Не проблема",
+          "paragraflar": [
+            "Багги-тур в Сиде рассчитан и на тех, кто впервые садится за руль внедорожной техники. Перед стартом наша опытная команда подробно объясняет управление, правила безопасности и особенности маршрута. После короткой пробной поездки мы отправляемся вместе с гидами, как только вы будете готовы.",
+            "Багги очень просты в управлении, поэтому вы освоитесь за пару минут и сможете полностью сосредоточиться на удовольствии и природе вокруг."
+          ]
+        },
+        {
+          "baslik": "Приключение на настоящих офф-роуд трассах",
+          "paragraflar": [
+            "По специально подготовленному маршруту вы проедете через сосновые леса, по грунтовым дорогам и через грязевые участки. Природный рельеф делает каждый отрезок пути разным и захватывающим.",
+            "На протяжении всего сафари группа движется колонной вместе с гидами, поэтому поездка остаётся безопасной и организованной."
+          ]
+        },
+        {
+          "baslik": "Купание и отдых у водоёма",
+          "paragraflar": [
+            "В середине сафари мы делаем остановку у природного водоёма. Можно искупаться в прохладной воде, прогуляться неподалёку или просто отдохнуть и набраться сил перед следующим этапом.",
+            "Чистый воздух и спокойная атмосфера гор Тавр делают эту паузу одним из самых приятных моментов тура. Обратите внимание: питание в программу не входит."
+          ]
+        },
+        {
+          "baslik": "Профессиональная фото- и видеосъёмка",
+          "paragraflar": [
+            "Во время поездки вам не нужен ни телефон, ни камера. Наша профессиональная команда снимает самые яркие моменты в высоком качестве.",
+            "В конце тура вы можете приобрести эти снимки и спустя годы вспоминать этот особенный день в Сиде с тем же восторгом."
+          ]
+        },
+        {
+          "baslik": "Почему стоит выбрать багги сафари в Сиде?",
+          "paragraflar": [
+            "Настоящие офф-роуд трассы, опытные гиды, бесплатный трансфер и организация с приоритетом безопасности делают багги-тур одним из самых востребованных приключений в Сиде.",
+            "Приедете ли вы с друзьями или с семьёй — этот опыт посреди природы добавит вашему отпуску совершенно новый заряд эмоций."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Я никогда не водил багги. Можно участвовать?",
+          "cevap": "Конечно. Багги очень просты в управлении. Перед туром мы проводим короткий инструктаж и пробную поездку — большинство гостей осваиваются за несколько минут."
+        },
+        {
+          "soru": "Нужны ли водительские права?",
+          "cevap": "Нет. Для этой активности права не требуются. Достаточно соблюдать правила безопасности и указания гидов."
+        },
+        {
+          "soru": "Сколько длится багги сафари?",
+          "cevap": "Тур длится около 2 часов, включая остановку у водоёма. Когда начинается веселье, время летит незаметно. 😊"
+        },
+        {
+          "soru": "Багги одноместные?",
+          "cevap": "Наши багги двухместные. Вы можете меняться за рулём или просто наслаждаться поездкой в качестве пассажира."
+        },
+        {
+          "soru": "Мы испачкаемся?",
+          "cevap": "Немного — да. Грязь, пыль и броды — самая весёлая часть этого тура. Одежду можно постирать, а такие впечатления найти сложнее. 😄"
+        },
+        {
+          "soru": "Есть ли остановка для купания?",
+          "cevap": "Да. Во время тура мы останавливаемся у природного водоёма. Можно искупаться или просто полюбоваться видом."
+        },
+        {
+          "soru": "Питание включено?",
+          "cevap": "Нет, питание в программу не входит."
+        },
+        {
+          "soru": "Делают ли фото и видео?",
+          "cevap": "Да. Наша команда снимает лучшие моменты. В конце тура при желании можно приобрести снимки."
+        },
+        {
+          "soru": "Трансфер включён?",
+          "cevap": "Да. Мы предоставляем бесплатный трансфер туда и обратно из отелей Сиде и окрестностей."
+        },
+        {
+          "soru": "Нужна ли предоплата?",
+          "cevap": "Нет. Предоплату мы не берём. Оплатить можно в день тура."
+        }
+      ]
+    },
+    "pl": {
+      "ad": "Buggy Safari",
+      "slogan": "Błoto, kurz i pełny gaz w buggy z klatką",
+      "giris": "Jeśli szukasz czegoś więcej niż zwykłych wakacyjnych atrakcji, Side Buggy Safari to jedna z najpopularniejszych wycieczek łączących adrenalinę z odkrywaniem. Na naturalnych trasach gór Taurus pojedziesz po drogach gruntowych, błotnistych odcinkach, przez brody i nierówny teren — to prawdziwy off-road. Trasa wijąca się przez lasy sosnowe pokazuje piękno regionu z zupełnie innej perspektywy.",
+      "oneCikanlar": [
+        "Dwuosobowe buggy z klatką",
+        "Błotniste kałuże i brody",
+        "2 godziny pełnej trasy",
+        "Bez prawa jazdy",
+        "Darmowy odbiór z hotelu"
+      ],
+      "fiyataDahil": [
+        "Transfer z hotelu i z powrotem",
+        "Buggy i kask",
+        "Trasa z przewodnikiem",
+        "Ubezpieczenie"
+      ],
+      "program": [
+        {
+          "baslik": "Odbiór",
+          "aciklama": "Odbieramy Cię z hotelu transferem"
+        },
+        {
+          "baslik": "Szkolenie",
+          "aciklama": "Krótkie szkolenie i sprzęt"
+        },
+        {
+          "baslik": "Trasa",
+          "aciklama": "2 godziny błota, kurzu i brodów"
+        },
+        {
+          "baslik": "Powrót",
+          "aciklama": "Po przerwie na umycie — powrót do hotelu"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Nigdy nie jeździłeś buggy? Bez obaw",
+          "paragraflar": [
+            "Side Buggy Tour jest zaplanowana także z myślą o osobach, które pierwszy raz siadają za kierownicą pojazdu terenowego. Przed startem nasz doświadczony zespół szczegółowo objaśnia obsługę pojazdu, zasady bezpieczeństwa i trasę. Po krótkiej jeździe próbnej ruszamy z przewodnikami, gdy tylko poczujesz się gotowy.",
+            "Buggy są bardzo proste w obsłudze, więc przyzwyczaisz się do pojazdu w kilka minut i skupisz się wyłącznie na zabawie i otaczającej przyrodzie."
+          ]
+        },
+        {
+          "baslik": "Przygoda na prawdziwych trasach off-road",
+          "paragraflar": [
+            "Na specjalnie przygotowanej trasie przejedziesz przez lasy sosnowe, po drogach gruntowych i przez błotniste odcinki. Naturalny teren sprawia, że każdy fragment trasy jest inny i ekscytujący.",
+            "Przez całe safari grupa jedzie w konwoju z naszymi przewodnikami, dzięki czemu jazda pozostaje bezpieczna i dobrze zorganizowana."
+          ]
+        },
+        {
+          "baslik": "Kąpiel i odpoczynek nad stawem",
+          "paragraflar": [
+            "W połowie safari zatrzymujemy się przy naturalnym stawie. Możesz popływać w chłodnej wodzie, przejść się w okolicy albo po prostu odpocząć i nabrać sił przed kolejnym etapem.",
+            "Czyste powietrze i spokojna atmosfera gór Taurus sprawiają, że to jeden z najprzyjemniejszych momentów wycieczki. Posiłki nie są wliczone w program."
+          ]
+        },
+        {
+          "baslik": "Profesjonalna obsługa foto i wideo",
+          "paragraflar": [
+            "Podczas jazdy nie musisz mieć przy sobie telefonu ani aparatu. Nasz profesjonalny zespół rejestruje najbardziej emocjonujące chwile w wysokiej jakości.",
+            "Na koniec wycieczki możesz kupić te materiały i po latach wspominać ten wyjątkowy dzień w Side z tym samym entuzjazmem."
+          ]
+        },
+        {
+          "baslik": "Dlaczego warto wybrać Side Buggy Safari?",
+          "paragraflar": [
+            "Prawdziwe trasy off-road, doświadczeni przewodnicy, darmowy transfer z hotelu i organizacja stawiająca bezpieczeństwo na pierwszym miejscu sprawiają, że Buggy Tour to jedna z najchętniej wybieranych atrakcji w Side.",
+            "Niezależnie od tego, czy przyjedziesz z przyjaciółmi, czy z rodziną, to przeżycie na łonie natury doda Twoim wakacjom zupełnie nowych emocji."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Nigdy nie jeździłem buggy. Mogę wziąć udział?",
+          "cevap": "Oczywiście. Buggy są bardzo łatwe w prowadzeniu. Przed wycieczką organizujemy krótkie szkolenie i jazdę próbną — większość gości czuje się swobodnie po kilku minutach."
+        },
+        {
+          "soru": "Czy potrzebne jest prawo jazdy?",
+          "cevap": "Nie. Do tej aktywności prawo jazdy nie jest wymagane. Wystarczy przestrzegać zasad bezpieczeństwa i wskazówek przewodników."
+        },
+        {
+          "soru": "Ile trwa Buggy Safari?",
+          "cevap": "Wycieczka trwa około 2 godzin wraz z przerwą nad stawem. Gdy zaczyna się zabawa, czas leci błyskawicznie. 😊"
+        },
+        {
+          "soru": "Czy pojazdy są jednoosobowe?",
+          "cevap": "Nasze buggy są dwuosobowe. Możecie zmieniać się za kierownicą albo po prostu cieszyć się jazdą jako pasażer."
+        },
+        {
+          "soru": "Czy się ubrudzimy?",
+          "cevap": "Tak, trochę. Błoto, kurz i brody to najprzyjemniejsza część tej wycieczki. Ubrania można wyprać, a takich wspomnień nie kupisz. 😄"
+        },
+        {
+          "soru": "Czy jest przerwa na kąpiel?",
+          "cevap": "Tak. Podczas wycieczki zatrzymujemy się przy naturalnym stawie. Można popływać lub po prostu podziwiać widok."
+        },
+        {
+          "soru": "Czy posiłki są wliczone?",
+          "cevap": "Nie, posiłki nie są wliczone w program."
+        },
+        {
+          "soru": "Czy robicie zdjęcia i filmy?",
+          "cevap": "Tak. Nasz zespół rejestruje najlepsze momenty. Na koniec wycieczki można je kupić."
+        },
+        {
+          "soru": "Czy transfer jest wliczony?",
+          "cevap": "Tak. Oferujemy darmowy transfer w obie strony z hoteli w Side i okolicach."
+        },
+        {
+          "soru": "Czy trzeba płacić z góry?",
+          "cevap": "Nie. Nie pobieramy zaliczek. Zapłacisz bezpiecznie w dniu wycieczki."
+        }
+      ]
+    }
+  }
+}

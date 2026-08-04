@@ -2,29 +2,28 @@ import Link from "next/link";
 import Image from "next/image";
 import Tick from "@/components/Tick";
 import { notFound } from "next/navigation";
-import { PKGS, getPkg, CONTACT, toTL } from "@/data";
+import { paket, CONTACT, toTL } from "@/data";
 import { T, type Locale } from "@/i18n";
 import MobileMenu from "@/components/MobileMenu";
-import { pkgText } from "@/pkg-i18n";
-import { SEO_CONTENT, FAQ_FULL } from "@/content";
+
+
 import Gallery from "@/app/Gallery";
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
 
 export default function TourPage({ slug, locale }: { slug: string; locale: Locale }) {
-  const p = getPkg(slug);
+  const p = paket(slug, locale);
   if (!p) notFound();
   const t = T[locale];
   const base = locale === "tr" ? "" : `/${locale}`;
-  const tr = pkgText(locale, slug);
-  const name = tr?.name ?? p.name;
-  const tagline = tr?.tagline ?? p.tagline;
+  const name = p.name;
+  const tagline = p.tagline;
 
-  const seo = tr ? { intro: tr.intro, sections: tr.sections } : SEO_CONTENT[slug];
-  const faqList = tr?.faq ?? FAQ_FULL[slug] ?? p.faq;
-  const highlights = tr?.highlights ?? p.highlights;
-  const includes = tr?.includes ?? p.includes;
-  const program = tr?.program ?? p.program;
+  const seo = { intro: p.intro, sections: p.sections };
+  const faqList = p.faq;
+  const highlights = p.highlights;
+  const includes = p.includes;
+  const program = p.program;
   const wa = `${CONTACT.whatsapp}?text=${encodeURIComponent(locale === "tr" ? `Merhaba, "${name}" için rezervasyon yapmak istiyorum. Tarih ve kişi sayısı: ` : `Hello, I would like to book "${name}". Date and number of people: `)}`;
   const SITE_URL = "https://www.sidequadbuggy.com";
   const jsonLd = {

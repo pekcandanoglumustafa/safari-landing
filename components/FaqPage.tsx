@@ -1,17 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-import { CONTACT, PKGS } from "@/data";
-import { FAQ_FULL } from "@/content";
+import { CONTACT, paketler } from "@/data";
+
 import { T, type Locale } from "@/i18n";
 import MobileMenu from "@/components/MobileMenu";
-import { pkgText } from "@/pkg-i18n";
+
 import LangSwitcher from "@/app/LangSwitcher";
 import FloatingWhats from "@/app/FloatingWhats";
 
 export default function FaqPage({ locale }: { locale: Locale }) {
   const t = T[locale];
   const base = locale === "tr" ? "" : `/${locale}`;
-  const listFor = (slug: string) => pkgText(locale, slug)?.faq ?? FAQ_FULL[slug];
+  const PKGS = paketler(locale);
+  const listFor = (slug: string) => PKGS.find((x) => x.slug === slug)?.faq;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -53,7 +54,7 @@ export default function FaqPage({ locale }: { locale: Locale }) {
           if (!list) return null;
           return (
             <section key={p.slug} className="mt-10">
-              <h2 className="display text-2xl font-extrabold text-navy">{pkgText(locale, p.slug)?.name ?? p.name}</h2>
+              <h2 className="display text-2xl font-extrabold text-navy">{p.name}</h2>
               <div className="mt-4 space-y-3">
                 {list.map((f) => (
                   <details key={f.q} className="group rounded-xl bg-white p-4 ring-1 ring-black/5">
@@ -65,7 +66,7 @@ export default function FaqPage({ locale }: { locale: Locale }) {
                 ))}
               </div>
               <Link href={`${base}/tur/${p.slug}`} className="mt-4 inline-block font-semibold text-orange hover:underline">
-                {pkgText(locale, p.slug)?.name ?? p.name} {t.seeTour} →
+                {p.name} {t.seeTour} →
               </Link>
             </section>
           );

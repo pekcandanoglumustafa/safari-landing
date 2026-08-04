@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import TourPage from "@/components/TourPage";
-import { PKGS, getPkg, toTL } from "@/data";
+import { SLUGS, paket, toTL } from "@/data";
 
-export function generateStaticParams() { return PKGS.map((p) => ({ slug: p.slug })); }
+export function generateStaticParams() { return SLUGS.map((slug) => ({ slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const p = getPkg(slug);
+  const p = paket(slug, "tr");
   if (!p) return {};
   return {
     title: `${p.name} Side — Fiyat & Rezervasyon | Manavgat`,

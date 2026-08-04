@@ -1,0 +1,681 @@
+{
+  "slug": "quad-safari",
+  "sira": 1,
+  "fiyat": 19,
+  "eskiFiyat": 30,
+  "sure": "dur2h",
+  "kapak": "/img/quad-1.jpg",
+  "galeri": [
+    "/img/quad-1.jpg",
+    "/img/quad-2.jpg",
+    "/img/quad-3.jpg",
+    "/img/quad-4.jpg",
+    "/img/quad-5.jpg",
+    "/img/quad-6.jpg"
+  ],
+  "diller": {
+    "tr": {
+      "ad": "Quad Safari",
+      "slogan": "Toz duman ATV ile 2 saatlik off-road macera",
+      "giris": "Macera, doğa ve adrenalini bir arada yaşamak isteyenler için Side Quad Safari, tatilinize heyecan katacak en popüler aktivitelerden biridir. Toros Dağları'nın eteklerinde bulunan özel parkurumuz; toprak yollar, çamurlu bölümler, su geçişleri ve engebeli arazileriyle gerçek bir off-road deneyimi sunar. Yemyeşil çam ormanlarının arasında ilerlerken temiz havanın ve eşsiz manzaraların keyfini çıkarabilir, doğayla iç içe unutulmaz anlar yaşayabilirsiniz.",
+      "oneCikanlar": [
+        "Kişiye özel quad (ATV)",
+        "Toz ve su sıçratan parkur",
+        "2 saat off-road macera",
+        "Ehliyet gerekmez",
+        "Otelden ücretsiz alma-bırakma"
+      ],
+      "fiyataDahil": [
+        "Otelden alma-bırakma",
+        "Quad ve kask",
+        "Rehber eşliğinde parkur",
+        "Sigorta"
+      ],
+      "program": [
+        {
+          "baslik": "Alınış",
+          "aciklama": "Otelinizden servis ile alınıyorsunuz"
+        },
+        {
+          "baslik": "Brifing",
+          "aciklama": "Güvenlik eğitimi ve quad kullanımı"
+        },
+        {
+          "baslik": "Parkur",
+          "aciklama": "2 saat tepeler, dere geçişleri, toz"
+        },
+        {
+          "baslik": "Dönüş",
+          "aciklama": "Mola sonrası otele bırakış"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "İlk Kez Katılacak Misafirler İçin de Uygun",
+          "paragraflar": [
+            "Daha önce ATV kullanmadıysanız endişelenmeyin. Side Quad Tour, deneyimli rehberler eşliğinde hem ilk kez arazi aracı kullanacak misafirler hem de tecrübeli sürücüler için güvenli ve keyifli bir deneyim sunar. Tur başlamadan önce verilen kısa eğitim sayesinde kendinizi hazır hissederek Quad Safari macerasına güvenle katılabilirsiniz.",
+            "Eğitimin ardından kısa bir deneme sürüşü yapılır ve herkes hazır olduğunda konvoy halinde parkura çıkılır. Rehberlerimiz tur boyunca gruba eşlik ederek güvenli ve düzenli bir sürüş deneyimi yaşamanızı sağlar."
+          ]
+        },
+        {
+          "baslik": "Doğanın İçinde Gölette Serinleme Molası",
+          "paragraflar": [
+            "Safari sırasında doğal bir gölet kenarında mola veriyoruz. Bu molada dileyen misafirler serin sularda yüzebilir, dinlenebilir veya çevrede kısa bir yürüyüş yaparak doğanın tadını çıkarabilir.",
+            "Toros Dağları'nın huzurlu atmosferinde verilen bu mola, hem enerji toplamak hem de çevrenin doğal güzelliklerini keşfetmek için keyifli bir fırsat sunar. Tur programımızda yemek servisi bulunmamaktadır."
+          ]
+        },
+        {
+          "baslik": "Profesyonel Fotoğraf ve Video Hizmeti",
+          "paragraflar": [
+            "Sürüş boyunca sadece maceranın keyfini çıkarmanız yeterli. Profesyonel ekibimiz, turun en heyecanlı anlarını yüksek kaliteli fotoğraf ve videolarla kayıt altına alır.",
+            "Tur sonunda isterseniz bu görüntüleri satın alabilir ve yaşadığınız unutulmaz anları sevdiklerinizle paylaşabileceğiniz kalıcı hatıralara dönüştürebilirsiniz."
+          ]
+        },
+        {
+          "baslik": "Gerçek Off-Road Parkurlarında Heyecan Dolu Sürüş",
+          "paragraflar": [
+            "Quad Tour boyunca asfalt yollar yerine tamamen doğal arazi koşullarında ilerlersiniz. Çamurlu zeminler, toprak yollar, küçük su geçişleri ve eğimli parkurlar sürüşü daha eğlenceli ve heyecan verici hale getirir.",
+            "Doğayla iç içe vakit geçirmek, yeni yerler keşfetmek ve tatiline farklı bir deneyim eklemek isteyen misafirler için bu aktivite Side bölgesinin en çok tercih edilen açık hava etkinliklerinden biridir."
+          ]
+        },
+        {
+          "baslik": "Neden Side Quad Safari'yi Tercih Etmelisiniz?",
+          "paragraflar": [
+            "Profesyonel rehberler, özenle hazırlanan doğal parkur, güvenlik odaklı organizasyon ve ücretsiz otel transferi sayesinde bu tur, tatilinize hem eğlence hem de macera katar. Adrenalin dolu sürüşler, Toros Dağları'nın eşsiz doğası ve gölette verilen yüzme molasıyla unutulmaz bir gün yaşayabilirsiniz.",
+            "İster arkadaş grubunuzla ister ailenizle katılın, bu deneyim Side tatiliniz boyunca en çok hatırlayacağınız aktivitelerden biri olacaktır."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Daha önce hiç quad kullanmadım. Tura katılabilir miyim?",
+          "cevap": "Elbette! Hatta misafirlerimizin büyük bir kısmı ilk kez quad kullanıyor. Tur başlamadan önce deneyimli rehberlerimiz tarafından kısa bir eğitim veriliyor ve deneme sürüşü yapıyorsunuz. İlk birkaç dakikanın ardından çoğu misafirimizin yüzünde aynı gülümsemeyi görüyoruz. 😊"
+        },
+        {
+          "soru": "Quad kullanmak için ehliyet gerekiyor mu?",
+          "cevap": "Hayır. Quad Safari turuna katılmak için ehliyet zorunlu değildir. Rehberlerimizin verdiği eğitimi dikkatle dinlemeniz ve güvenlik kurallarına uymanız yeterlidir."
+        },
+        {
+          "soru": "Quad Safari turu ne kadar sürüyor?",
+          "cevap": "Turumuz yaklaşık 2 saat sürmektedir ve bu süreye gölette verdiğimiz mola da dahildir. İki saat kulağa kısa gelebilir ama parkur bittiğinde en sık duyduğumuz cümle şudur: 'Keşke biraz daha uzun sürseydi!' 😄"
+        },
+        {
+          "soru": "Parkur zor mu?",
+          "cevap": "Hayır. Parkur hem ilk kez quad kullanacak misafirler hem de daha önce deneyimi olanlar düşünülerek hazırlanmıştır. Ama merak etmeyin, birkaç küçük çamur sürprizi de sizi bekliyor. 😊"
+        },
+        {
+          "soru": "Üzerimiz kirlenir mi?",
+          "cevap": "Kısa cevap: Biraz evet. Toprak yollar, çamurlu bölümler ve su geçişleri bu maceranın doğal bir parçasıdır. Sonuçta temiz kıyafetler yıkanır ama güzel anılar uzun süre sizinle kalır."
+        },
+        {
+          "soru": "Gölette yüzme molası var mı?",
+          "cevap": "Evet. Tur sırasında doğal bir gölet kenarında mola veriyoruz. İsterseniz serin sularda yüzebilir, isterseniz manzaranın keyfini çıkararak dinlenebilirsiniz."
+        },
+        {
+          "soru": "Tur sırasında yemek veriliyor mu?",
+          "cevap": "Hayır. Tur programımıza yemek dahil değildir. Böylece zamanımızın tamamını sürüş keyfine ve eğlenceye ayırıyoruz."
+        },
+        {
+          "soru": "Fotoğraf ve video çekiliyor mu?",
+          "cevap": "Evet. Profesyonel ekibimiz turun en heyecanlı anlarını fotoğraf ve video olarak kaydediyor. Böylece siz direksiyona odaklanırken güzel anılarınız bizimle güvende oluyor."
+        },
+        {
+          "soru": "Telefonumu yanıma alabilir miyim?",
+          "cevap": "Alabilirsiniz ancak sürüş sırasında kullanmanızı önermiyoruz. Telefonlar yeni alınabilir ama kaçırılan bir macera tekrar yaşanmaz. 😊"
+        },
+        {
+          "soru": "Quad devrilir mi?",
+          "cevap": "Kurallara uyulduğu ve rehberlerimizin talimatları takip edildiği sürece tur güvenli şekilde tamamlanmaktadır. Bu yüzden hızdan çok güvenli sürüşe önem veriyoruz."
+        },
+        {
+          "soru": "Çocuklar tura katılabilir mi?",
+          "cevap": "Evet. Belirlenen güvenlik kurallarına uygun olarak çocuklar yolcu olarak katılabilir. Rezervasyon sırasında yaş bilgisini paylaşmanız yeterlidir."
+        },
+        {
+          "soru": "Otelden alıyor musunuz?",
+          "cevap": "Evet. Side ve çevresindeki birçok otelden ücretsiz gidiş-dönüş transfer hizmeti sunuyoruz. Siz tatilinizin keyfini çıkarın, ulaşımı bize bırakın."
+        },
+        {
+          "soru": "Ön ödeme yapmam gerekiyor mu?",
+          "cevap": "Hayır. Rezervasyon sırasında ön ödeme talep etmiyoruz. Ödemenizi tur günü güvenle gerçekleştirebilirsiniz."
+        },
+        {
+          "soru": "Yağmur yağarsa tur iptal olur mu?",
+          "cevap": "Hafif yağmur genellikle turun yapılmasına engel değildir. Ancak misafirlerimizin güvenliğini riske atabilecek hava koşullarında tur programı ertelenebilir veya farklı bir güne alınabilir."
+        },
+        {
+          "soru": "Quad Safari bana uygun mu?",
+          "cevap": "Eğer doğayı seviyor, biraz macera arıyor ve tatilinizde unutulmaz anılar biriktirmek istiyorsanız cevap kesinlikle evet. Üstelik birçok misafirimiz tur sonunda 'İyi ki katılmışız.' diyerek ayrılıyor. Bizce en güzel yorum da bu. 😊"
+        },
+        {
+          "soru": "Neden sizi tercih etmeliyim?",
+          "cevap": "Çünkü biz sadece bir tur satmıyoruz, tatiliniz boyunca anlatacağınız güzel anılar biriktirmenize yardımcı oluyoruz. Ücretsiz otel transferi, ön ödeme yok, profesyonel rehberler, güvenli organizasyon ve gerçek off-road parkuru — siz eğlenmeye odaklanın, gerisini bize bırakın."
+        }
+      ]
+    },
+    "en": {
+      "ad": "Quad Safari",
+      "slogan": "2 hours of dusty ATV trails — every day",
+      "giris": "For those who want to experience adventure, nature and adrenaline together, Side Quad Safari is one of the most popular activities to add excitement to your holiday. Our private trail at the foot of the Taurus mountains offers a genuine off-road experience with dirt roads, muddy sections, water crossings and rugged terrain. As you ride through green pine forests you can enjoy the fresh air and unique views, and create unforgettable moments in the middle of nature.",
+      "oneCikanlar": [
+        "Your own quad (ATV)",
+        "Dust and water splashing trail",
+        "2 hours of off-road adventure",
+        "No licence required",
+        "Free hotel pick-up and drop-off"
+      ],
+      "fiyataDahil": [
+        "Hotel pick-up and drop-off",
+        "Quad and helmet",
+        "Guided trail",
+        "Insurance"
+      ],
+      "program": [
+        {
+          "baslik": "Session 1",
+          "aciklama": "Morning pick-up — the cooler hours"
+        },
+        {
+          "baslik": "Session 2",
+          "aciklama": "Afternoon pick-up"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Suitable for First-Time Riders Too",
+          "paragraflar": [
+            "If you have never ridden an ATV, don't worry. Side Quad Tour offers a safe and enjoyable experience for both first-timers and experienced riders, always accompanied by our guides. Thanks to the short training given before the tour, you can join the Quad Safari feeling fully prepared.",
+            "After the training there is a short practice run, and once everyone is ready we head out to the trail in convoy. Our guides accompany the group throughout the tour to keep the ride safe and orderly."
+          ]
+        },
+        {
+          "baslik": "A Cooling Break at the Pond",
+          "paragraflar": [
+            "During the safari we take a break beside a natural pond. Guests who wish can swim in the cool water, rest or take a short walk to enjoy the nature around.",
+            "This break in the peaceful atmosphere of the Taurus mountains is a great chance to recharge and discover the natural beauty of the area. Meals are not included in our programme."
+          ]
+        },
+        {
+          "baslik": "Professional Photo and Video Service",
+          "paragraflar": [
+            "All you need to do during the ride is enjoy the adventure. Our professional team records the most exciting moments in high quality photos and videos.",
+            "At the end of the tour you can purchase these images and turn the moments you experienced into lasting memories to share with your loved ones."
+          ]
+        },
+        {
+          "baslik": "Thrilling Ride on Real Off-Road Trails",
+          "paragraflar": [
+            "Throughout the Quad Tour you ride on completely natural terrain rather than asphalt roads. Muddy ground, dirt tracks, small water crossings and sloping sections make the ride far more fun and exciting.",
+            "For guests who want to spend time in nature, discover new places and add a different experience to their holiday, this is one of the most preferred outdoor activities in the Side region."
+          ]
+        },
+        {
+          "baslik": "Why Choose Side Quad Safari?",
+          "paragraflar": [
+            "With professional guides, a carefully prepared natural trail, a safety-focused organisation and free hotel transfer, this tour adds both fun and adventure to your holiday. Adrenaline-filled rides, the unique nature of the Taurus mountains and the swim stop at the pond make for an unforgettable day.",
+            "Whether you join with friends or family, this will be one of the experiences you remember most from your holiday in Side."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "I have never ridden a quad. Can I join the tour?",
+          "cevap": "Of course! In fact most of our guests are riding a quad for the first time. Our experienced guides give a short training before the tour and you do a practice run. After the first few minutes we see the same smile on almost every guest's face. 😊"
+        },
+        {
+          "soru": "Do I need a driving licence to ride a quad?",
+          "cevap": "No. A licence is not required for the Quad Safari tour. You only need to listen carefully to the training and follow the safety rules."
+        },
+        {
+          "soru": "How long does the Quad Safari take?",
+          "cevap": "The tour lasts about 2 hours, including the break at the pond. Two hours may sound short, but the sentence we hear most at the end is: 'I wish it had lasted longer!' 😄"
+        },
+        {
+          "soru": "Is the trail difficult?",
+          "cevap": "No. The trail is prepared with both first-time riders and experienced guests in mind. But don't worry, a few little mud surprises are waiting for you. 😊"
+        },
+        {
+          "soru": "Will we get dirty?",
+          "cevap": "Short answer: a little bit, yes. Dirt roads, muddy sections and water crossings are a natural part of this adventure. Clothes can be washed, but good memories stay with you far longer."
+        },
+        {
+          "soru": "Is there a swimming break at the pond?",
+          "cevap": "Yes. We take a break beside a natural pond during the tour. You can swim in the cool water or simply relax and enjoy the view."
+        },
+        {
+          "soru": "Are meals served during the tour?",
+          "cevap": "No. Meals are not included in our programme, so we can dedicate all our time to the ride and the fun."
+        },
+        {
+          "soru": "Are photos and videos taken?",
+          "cevap": "Yes. Our professional team records the most exciting moments as photos and videos, so you can focus on riding while your memories are safe with us."
+        },
+        {
+          "soru": "Can I bring my phone?",
+          "cevap": "You can, but we don't recommend using it while riding. Phones can be replaced, a missed adventure cannot. 😊"
+        },
+        {
+          "soru": "Can quads tip over?",
+          "cevap": "As long as the rules are followed and our guides' instructions are respected, the tour is completed safely. That's why we value safe riding over speed."
+        },
+        {
+          "soru": "Can children join the tour?",
+          "cevap": "Yes. In line with our safety rules, children can join as passengers. Just share their age when booking."
+        },
+        {
+          "soru": "Do you pick us up from the hotel?",
+          "cevap": "Yes. We offer free round-trip transfers from many hotels in Side and the surrounding area. You enjoy your holiday, we handle the transport."
+        },
+        {
+          "soru": "Do I need to pay in advance?",
+          "cevap": "No. We don't ask for prepayment when booking. You can pay safely on the day of the tour."
+        },
+        {
+          "soru": "What happens if it rains?",
+          "cevap": "Light rain usually doesn't prevent the tour. However, in weather conditions that could compromise our guests' safety, the tour may be postponed or moved to another day."
+        },
+        {
+          "soru": "Is Quad Safari right for me?",
+          "cevap": "If you love nature, are looking for a bit of adventure and want to collect unforgettable memories on your holiday, the answer is definitely yes. Many of our guests leave saying 'I'm glad we did this' — and for us, that's the best review of all. 😊"
+        },
+        {
+          "soru": "Why should I choose you?",
+          "cevap": "Because we don't just sell a tour, we help you collect memories you'll be talking about for the rest of your holiday. Free hotel transfer, no prepayment, professional guides, a safety-focused organisation and a genuine off-road trail — you focus on having fun, we'll handle the rest."
+        }
+      ]
+    },
+    "de": {
+      "ad": "Quad Safari",
+      "slogan": "2 Stunden staubige ATV-Pisten — täglich",
+      "giris": "Für alle, die Abenteuer, Natur und Adrenalin zugleich erleben möchten, ist die Side Quad Safari eine der beliebtesten Aktivitäten, die Ihrem Urlaub Nervenkitzel verleiht. Unsere private Strecke am Fuße des Taurusgebirges bietet mit Feldwegen, schlammigen Abschnitten, Wasserdurchfahrten und unebenem Gelände ein echtes Offroad-Erlebnis. Während Sie durch grüne Pinienwälder fahren, genießen Sie die frische Luft und einzigartige Ausblicke.",
+      "oneCikanlar": [
+        "Eigenes Quad (ATV)",
+        "Staub und Wasser auf der Strecke",
+        "2 Stunden Offroad-Abenteuer",
+        "Kein Führerschein nötig",
+        "Kostenlose Hotelabholung"
+      ],
+      "fiyataDahil": [
+        "Hotelabholung und -rückfahrt",
+        "Quad und Helm",
+        "Geführte Tour",
+        "Versicherung"
+      ],
+      "program": [
+        {
+          "baslik": "Session 1",
+          "aciklama": "Abholung am Morgen — die kühleren Stunden"
+        },
+        {
+          "baslik": "Session 2",
+          "aciklama": "Abholung am Nachmittag"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Auch für Erstfahrer geeignet",
+          "paragraflar": [
+            "Wenn Sie noch nie ein ATV gefahren sind, keine Sorge. Die Side Quad Tour bietet in Begleitung erfahrener Guides ein sicheres und angenehmes Erlebnis — sowohl für Anfänger als auch für erfahrene Fahrer. Dank der kurzen Einweisung vor der Tour fühlen Sie sich bestens vorbereitet.",
+            "Nach der Einweisung folgt eine kurze Proberunde, und sobald alle bereit sind, geht es im Konvoi auf die Strecke. Unsere Guides begleiten die Gruppe während der gesamten Tour."
+          ]
+        },
+        {
+          "baslik": "Erfrischungspause am Teich",
+          "paragraflar": [
+            "Während der Safari legen wir eine Pause an einem natürlichen Teich ein. Wer möchte, kann im kühlen Wasser schwimmen, sich ausruhen oder einen kurzen Spaziergang machen.",
+            "Diese Pause in der friedlichen Atmosphäre des Taurusgebirges ist eine gute Gelegenheit, Kraft zu tanken und die Natur zu entdecken. Mahlzeiten sind im Programm nicht enthalten."
+          ]
+        },
+        {
+          "baslik": "Professioneller Foto- und Videoservice",
+          "paragraflar": [
+            "Während der Fahrt müssen Sie nur das Abenteuer genießen. Unser professionelles Team hält die aufregendsten Momente in hochwertigen Fotos und Videos fest.",
+            "Am Ende der Tour können Sie diese Aufnahmen erwerben und Ihre Erlebnisse in bleibende Erinnerungen verwandeln."
+          ]
+        },
+        {
+          "baslik": "Nervenkitzel auf echten Offroad-Strecken",
+          "paragraflar": [
+            "Während der Quad Tour fahren Sie nicht auf Asphalt, sondern auf komplett natürlichem Gelände. Schlammiger Boden, Feldwege, kleine Wasserdurchfahrten und Steigungen machen die Fahrt deutlich spannender.",
+            "Für Gäste, die Zeit in der Natur verbringen, Neues entdecken und ihrem Urlaub ein besonderes Erlebnis hinzufügen möchten, ist dies eine der beliebtesten Outdoor-Aktivitäten in der Region Side."
+          ]
+        },
+        {
+          "baslik": "Warum die Side Quad Safari wählen?",
+          "paragraflar": [
+            "Professionelle Guides, eine sorgfältig vorbereitete Naturstrecke, eine sicherheitsorientierte Organisation und kostenloser Hoteltransfer machen diese Tour zu einem Highlight Ihres Urlaubs. Adrenalinreiche Fahrten, die einzigartige Natur des Taurusgebirges und die Badepause am Teich sorgen für einen unvergesslichen Tag.",
+            "Ob mit Freunden oder mit der Familie — dies wird eines der Erlebnisse sein, an das Sie sich aus Ihrem Side-Urlaub am meisten erinnern."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Ich bin noch nie Quad gefahren. Kann ich teilnehmen?",
+          "cevap": "Selbstverständlich! Die meisten unserer Gäste fahren sogar zum ersten Mal Quad. Vor der Tour gibt es eine kurze Einweisung und eine Proberunde. Nach den ersten Minuten sehen wir bei fast allen dasselbe Lächeln. 😊"
+        },
+        {
+          "soru": "Brauche ich einen Führerschein?",
+          "cevap": "Nein. Für die Quad Safari ist kein Führerschein erforderlich. Sie müssen nur die Einweisung aufmerksam verfolgen und die Sicherheitsregeln einhalten."
+        },
+        {
+          "soru": "Wie lange dauert die Quad Safari?",
+          "cevap": "Die Tour dauert etwa 2 Stunden inklusive Pause am Teich. Zwei Stunden klingen kurz, aber der Satz, den wir am Ende am häufigsten hören, ist: 'Hätte ruhig länger dauern können!' 😄"
+        },
+        {
+          "soru": "Ist die Strecke schwierig?",
+          "cevap": "Nein. Die Strecke ist sowohl für Erstfahrer als auch für erfahrene Gäste ausgelegt. Aber keine Sorge, ein paar kleine Schlammüberraschungen warten trotzdem auf Sie. 😊"
+        },
+        {
+          "soru": "Werden wir schmutzig?",
+          "cevap": "Kurze Antwort: ein bisschen, ja. Feldwege, Schlammabschnitte und Wasserdurchfahrten gehören zu diesem Abenteuer. Kleidung kann man waschen, schöne Erinnerungen bleiben viel länger."
+        },
+        {
+          "soru": "Gibt es eine Badepause am Teich?",
+          "cevap": "Ja. Während der Tour legen wir eine Pause an einem natürlichen Teich ein. Sie können schwimmen oder einfach die Aussicht genießen."
+        },
+        {
+          "soru": "Werden Mahlzeiten serviert?",
+          "cevap": "Nein. Mahlzeiten sind nicht im Programm enthalten, damit wir die ganze Zeit dem Fahrspaß widmen können."
+        },
+        {
+          "soru": "Werden Fotos und Videos gemacht?",
+          "cevap": "Ja. Unser professionelles Team hält die aufregendsten Momente fest, damit Sie sich ganz aufs Fahren konzentrieren können."
+        },
+        {
+          "soru": "Kann ich mein Handy mitnehmen?",
+          "cevap": "Sie können, aber wir empfehlen, es während der Fahrt nicht zu benutzen. Handys kann man ersetzen, ein verpasstes Abenteuer nicht. 😊"
+        },
+        {
+          "soru": "Können Quads umkippen?",
+          "cevap": "Solange die Regeln und die Anweisungen unserer Guides befolgt werden, verläuft die Tour sicher. Deshalb legen wir mehr Wert auf sicheres Fahren als auf Geschwindigkeit."
+        },
+        {
+          "soru": "Können Kinder teilnehmen?",
+          "cevap": "Ja. Im Rahmen unserer Sicherheitsregeln können Kinder als Mitfahrer teilnehmen. Teilen Sie uns bei der Buchung einfach das Alter mit."
+        },
+        {
+          "soru": "Holen Sie uns vom Hotel ab?",
+          "cevap": "Ja. Wir bieten kostenlose Hin- und Rücktransfers von vielen Hotels in Side und Umgebung. Sie genießen Ihren Urlaub, den Transport übernehmen wir."
+        },
+        {
+          "soru": "Muss ich im Voraus zahlen?",
+          "cevap": "Nein. Bei der Buchung verlangen wir keine Anzahlung. Sie zahlen sicher am Tag der Tour."
+        },
+        {
+          "soru": "Was passiert bei Regen?",
+          "cevap": "Leichter Regen steht der Tour normalerweise nicht im Weg. Bei Wetterbedingungen, die die Sicherheit unserer Gäste gefährden könnten, kann die Tour jedoch verschoben werden."
+        },
+        {
+          "soru": "Ist die Quad Safari das Richtige für mich?",
+          "cevap": "Wenn Sie die Natur lieben, ein wenig Abenteuer suchen und unvergessliche Erinnerungen sammeln möchten, lautet die Antwort eindeutig ja. Viele Gäste sagen am Ende: 'Gut, dass wir mitgemacht haben.' Für uns ist das die schönste Bewertung. 😊"
+        },
+        {
+          "soru": "Warum sollte ich Sie wählen?",
+          "cevap": "Weil wir nicht einfach eine Tour verkaufen, sondern Ihnen helfen, Erinnerungen zu sammeln, von denen Sie den ganzen Urlaub erzählen werden. Kostenloser Hoteltransfer, keine Anzahlung, professionelle Guides, sichere Organisation und eine echte Offroad-Strecke — Sie haben Spaß, um den Rest kümmern wir uns."
+        }
+      ]
+    },
+    "ru": {
+      "ad": "Квадро сафари",
+      "slogan": "2 часа по пыльным трассам на квадроцикле — каждый день",
+      "giris": "Для тех, кто хочет ощутить приключение, природу и адреналин одновременно, квадро-сафари в Сиде — одна из самых популярных активностей. Наша частная трасса у подножия гор Тавр предлагает настоящий офф-роуд: грунтовые дороги, грязевые участки, броды и пересечённый рельеф. Проезжая через зелёные сосновые леса, вы насладитесь свежим воздухом и потрясающими видами.",
+      "oneCikanlar": [
+        "Собственный квадроцикл (ATV)",
+        "Пыль и брызги на трассе",
+        "2 часа офф-роуд приключения",
+        "Права не нужны",
+        "Бесплатный трансфер из отеля"
+      ],
+      "fiyataDahil": [
+        "Трансфер из отеля и обратно",
+        "Квадроцикл и шлем",
+        "Сопровождение гида",
+        "Страховка"
+      ],
+      "program": [
+        {
+          "baslik": "Сессия 1",
+          "aciklama": "Утренний выезд — в прохладные часы"
+        },
+        {
+          "baslik": "Сессия 2",
+          "aciklama": "Выезд после обеда"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Подходит и для новичков",
+          "paragraflar": [
+            "Если вы никогда не управляли квадроциклом, не волнуйтесь. Квадро-тур в Сиде безопасен и приятен как для новичков, так и для опытных водителей — рядом всегда наши гиды. Благодаря короткому инструктажу перед стартом вы будете чувствовать себя уверенно.",
+            "После инструктажа проводится пробная поездка, и когда все готовы, группа выезжает на трассу колонной. Гиды сопровождают группу на протяжении всего тура."
+          ]
+        },
+        {
+          "baslik": "Освежающая остановка у водоёма",
+          "paragraflar": [
+            "Во время сафари мы делаем остановку у природного водоёма. Желающие могут искупаться, отдохнуть или прогуляться, наслаждаясь природой.",
+            "Эта пауза в спокойной атмосфере гор Тавр — отличная возможность набраться сил. Питание в программу не входит."
+          ]
+        },
+        {
+          "baslik": "Профессиональная фото- и видеосъёмка",
+          "paragraflar": [
+            "Во время поездки вам достаточно просто наслаждаться приключением. Наша профессиональная команда снимает самые яркие моменты.",
+            "В конце тура вы можете приобрести эти материалы и превратить пережитое в долговечные воспоминания."
+          ]
+        },
+        {
+          "baslik": "Захватывающая поездка по настоящему бездорожью",
+          "paragraflar": [
+            "Во время квадро-тура вы едете не по асфальту, а по полностью естественному рельефу. Грязь, грунтовые дороги, небольшие броды и подъёмы делают поездку гораздо интереснее.",
+            "Для гостей, которые хотят провести время на природе, открыть новые места и добавить в отпуск необычный опыт, это одна из самых востребованных активностей в регионе Сиде."
+          ]
+        },
+        {
+          "baslik": "Почему стоит выбрать квадро сафари в Сиде?",
+          "paragraflar": [
+            "Профессиональные гиды, тщательно подготовленная природная трасса, организация с приоритетом безопасности и бесплатный трансфер делают этот тур ярким событием отпуска. Адреналин, уникальная природа гор Тавр и купание у водоёма создают незабываемый день.",
+            "С друзьями или с семьёй — это будет одно из самых запоминающихся впечатлений вашего отдыха в Сиде."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Я никогда не ездил на квадроцикле. Можно участвовать?",
+          "cevap": "Конечно! Более того, большинство наших гостей садятся за руль впервые. Перед туром проводится короткий инструктаж и пробная поездка. Уже через несколько минут мы видим одинаковую улыбку почти у всех. 😊"
+        },
+        {
+          "soru": "Нужны ли права для квадроцикла?",
+          "cevap": "Нет. Для квадро-сафари права не требуются. Достаточно внимательно выслушать инструктаж и соблюдать правила безопасности."
+        },
+        {
+          "soru": "Сколько длится квадро сафари?",
+          "cevap": "Тур длится около 2 часов вместе с остановкой у водоёма. Два часа звучат недолго, но чаще всего в конце мы слышим: «Хотелось бы подольше!» 😄"
+        },
+        {
+          "soru": "Трасса сложная?",
+          "cevap": "Нет. Трасса подготовлена с учётом и новичков, и опытных гостей. Но не переживайте, пара грязевых сюрпризов вас всё же ждёт. 😊"
+        },
+        {
+          "soru": "Мы испачкаемся?",
+          "cevap": "Коротко: немного, да. Грунтовые дороги, грязь и броды — естественная часть этого приключения. Одежду можно постирать, а хорошие воспоминания остаются надолго."
+        },
+        {
+          "soru": "Есть ли купание у водоёма?",
+          "cevap": "Да. Во время тура мы делаем остановку у природного водоёма. Можно искупаться или просто отдохнуть с видом на природу."
+        },
+        {
+          "soru": "Питание входит в тур?",
+          "cevap": "Нет. Питание не входит в программу — всё время мы посвящаем поездке и веселью."
+        },
+        {
+          "soru": "Делают ли фото и видео?",
+          "cevap": "Да. Наша команда снимает самые яркие моменты, чтобы вы могли сосредоточиться на дороге."
+        },
+        {
+          "soru": "Можно взять телефон?",
+          "cevap": "Можно, но использовать его во время движения мы не рекомендуем. Телефон можно заменить, упущенное приключение — нет. 😊"
+        },
+        {
+          "soru": "Квадроцикл может перевернуться?",
+          "cevap": "При соблюдении правил и указаний гидов тур проходит безопасно. Поэтому мы ценим безопасную езду выше скорости."
+        },
+        {
+          "soru": "Могут ли участвовать дети?",
+          "cevap": "Да. В рамках правил безопасности дети могут ехать пассажирами. При бронировании просто укажите возраст."
+        },
+        {
+          "soru": "Вы забираете из отеля?",
+          "cevap": "Да. Мы предоставляем бесплатный трансфер туда и обратно из многих отелей Сиде и окрестностей."
+        },
+        {
+          "soru": "Нужна ли предоплата?",
+          "cevap": "Нет. При бронировании предоплата не требуется. Оплатить можно в день тура."
+        },
+        {
+          "soru": "Что если пойдёт дождь?",
+          "cevap": "Небольшой дождь обычно не мешает туру. Однако при погодных условиях, угрожающих безопасности гостей, тур может быть перенесён."
+        },
+        {
+          "soru": "Подойдёт ли мне квадро сафари?",
+          "cevap": "Если вы любите природу, ищете немного приключений и хотите увезти с отдыха яркие впечатления — ответ определённо да. Многие гости в конце говорят: «Хорошо, что поехали». Для нас это лучший отзыв. 😊"
+        },
+        {
+          "soru": "Почему стоит выбрать вас?",
+          "cevap": "Потому что мы продаём не просто тур, а помогаем собрать впечатления, о которых вы будете рассказывать весь отпуск. Бесплатный трансфер, без предоплаты, профессиональные гиды, безопасная организация и настоящая офф-роуд трасса — вы веселитесь, остальное берём на себя."
+        }
+      ]
+    },
+    "pl": {
+      "ad": "Quad Safari",
+      "slogan": "2 godziny zakurzonych tras ATV — codziennie",
+      "giris": "Dla tych, którzy chcą poczuć przygodę, naturę i adrenalinę jednocześnie, Side Quad Safari to jedna z najpopularniejszych atrakcji. Nasza prywatna trasa u podnóża gór Taurus oferuje prawdziwy off-road: drogi gruntowe, błotniste odcinki, brody i nierówny teren. Jadąc przez zielone lasy sosnowe, nacieszysz się świeżym powietrzem i wyjątkowymi widokami.",
+      "oneCikanlar": [
+        "Własny quad (ATV)",
+        "Kurz i woda na trasie",
+        "2 godziny przygody off-road",
+        "Bez prawa jazdy",
+        "Darmowy odbiór z hotelu"
+      ],
+      "fiyataDahil": [
+        "Transfer z hotelu i z powrotem",
+        "Quad i kask",
+        "Trasa z przewodnikiem",
+        "Ubezpieczenie"
+      ],
+      "program": [
+        {
+          "baslik": "Tura 1",
+          "aciklama": "Odbiór rano — w chłodniejszych godzinach"
+        },
+        {
+          "baslik": "Tura 2",
+          "aciklama": "Odbiór po południu"
+        }
+      ],
+      "bolumler": [
+        {
+          "baslik": "Odpowiednie także dla początkujących",
+          "paragraflar": [
+            "Jeśli nigdy nie jeździłeś quadem, nie martw się. Side Quad Tour jest bezpieczna i przyjemna zarówno dla początkujących, jak i dla doświadczonych kierowców — zawsze w towarzystwie naszych przewodników. Dzięki krótkiemu szkoleniu przed startem poczujesz się przygotowany.",
+            "Po szkoleniu odbywa się krótka jazda próbna, a gdy wszyscy są gotowi, ruszamy na trasę w konwoju. Przewodnicy towarzyszą grupie przez całą wycieczkę."
+          ]
+        },
+        {
+          "baslik": "Orzeźwiająca przerwa nad stawem",
+          "paragraflar": [
+            "Podczas safari zatrzymujemy się przy naturalnym stawie. Chętni mogą popływać, odpocząć albo pospacerować, ciesząc się przyrodą.",
+            "Ta przerwa w spokojnej atmosferze gór Taurus to świetna okazja, by nabrać sił. Posiłki nie są wliczone w program."
+          ]
+        },
+        {
+          "baslik": "Profesjonalna obsługa foto i wideo",
+          "paragraflar": [
+            "Podczas jazdy wystarczy, że będziesz cieszyć się przygodą. Nasz profesjonalny zespół rejestruje najbardziej emocjonujące momenty.",
+            "Na koniec wycieczki możesz kupić te materiały i zamienić przeżycia w trwałe wspomnienia."
+          ]
+        },
+        {
+          "baslik": "Emocjonująca jazda po prawdziwym bezdrożu",
+          "paragraflar": [
+            "Podczas Quad Tour jedziesz nie po asfalcie, lecz po całkowicie naturalnym terenie. Błoto, drogi gruntowe, niewielkie brody i podjazdy sprawiają, że jazda jest znacznie ciekawsza.",
+            "Dla gości, którzy chcą spędzić czas na łonie natury, odkryć nowe miejsca i dodać do wakacji nietypowe przeżycie, to jedna z najchętniej wybieranych atrakcji w regionie Side."
+          ]
+        },
+        {
+          "baslik": "Dlaczego warto wybrać Side Quad Safari?",
+          "paragraflar": [
+            "Profesjonalni przewodnicy, starannie przygotowana naturalna trasa, organizacja stawiająca bezpieczeństwo na pierwszym miejscu i darmowy transfer sprawiają, że ta wycieczka staje się jednym z najlepszych punktów wakacji. Adrenalina, wyjątkowa przyroda gór Taurus i kąpiel nad stawem tworzą niezapomniany dzień.",
+            "Z przyjaciółmi czy z rodziną — to będzie jedno z najlepiej zapamiętanych przeżyć Twojego pobytu w Side."
+          ]
+        }
+      ],
+      "sss": [
+        {
+          "soru": "Nigdy nie jeździłem quadem. Mogę dołączyć?",
+          "cevap": "Oczywiście! Większość naszych gości jedzie quadem po raz pierwszy. Przed wycieczką organizujemy krótkie szkolenie i jazdę próbną. Po kilku minutach widzimy ten sam uśmiech na twarzach prawie wszystkich. 😊"
+        },
+        {
+          "soru": "Czy do jazdy quadem potrzebne jest prawo jazdy?",
+          "cevap": "Nie. Do Quad Safari prawo jazdy nie jest wymagane. Wystarczy uważnie wysłuchać szkolenia i przestrzegać zasad bezpieczeństwa."
+        },
+        {
+          "soru": "Ile trwa Quad Safari?",
+          "cevap": "Wycieczka trwa około 2 godzin wraz z przerwą nad stawem. Dwie godziny brzmią krótko, ale najczęściej na koniec słyszymy: „Szkoda, że tak szybko minęło!” 😄"
+        },
+        {
+          "soru": "Czy trasa jest trudna?",
+          "cevap": "Nie. Trasa jest przygotowana z myślą zarówno o początkujących, jak i o doświadczonych gościach. Ale spokojnie, kilka błotnych niespodzianek i tak na Ciebie czeka. 😊"
+        },
+        {
+          "soru": "Czy się ubrudzimy?",
+          "cevap": "Krótka odpowiedź: trochę tak. Drogi gruntowe, błoto i brody to naturalna część tej przygody. Ubrania można wyprać, a dobre wspomnienia zostają znacznie dłużej."
+        },
+        {
+          "soru": "Czy jest przerwa na kąpiel nad stawem?",
+          "cevap": "Tak. Podczas wycieczki robimy przerwę przy naturalnym stawie. Można popływać albo po prostu odpocząć przy pięknym widoku."
+        },
+        {
+          "soru": "Czy podczas wycieczki serwowane są posiłki?",
+          "cevap": "Nie. Posiłki nie są wliczone w program — cały czas poświęcamy jeździe i zabawie."
+        },
+        {
+          "soru": "Czy robicie zdjęcia i filmy?",
+          "cevap": "Tak. Nasz profesjonalny zespół rejestruje najbardziej emocjonujące momenty, dzięki czemu możesz skupić się na jeździe."
+        },
+        {
+          "soru": "Czy mogę wziąć telefon?",
+          "cevap": "Możesz, ale nie zalecamy używania go podczas jazdy. Telefon można wymienić, przegapionej przygody nie. 😊"
+        },
+        {
+          "soru": "Czy quad może się przewrócić?",
+          "cevap": "Przy przestrzeganiu zasad i wskazówek przewodników wycieczka przebiega bezpiecznie. Dlatego bardziej niż prędkość cenimy bezpieczną jazdę."
+        },
+        {
+          "soru": "Czy dzieci mogą wziąć udział?",
+          "cevap": "Tak. Zgodnie z zasadami bezpieczeństwa dzieci mogą jechać jako pasażerowie. Przy rezerwacji wystarczy podać wiek."
+        },
+        {
+          "soru": "Czy odbieracie z hotelu?",
+          "cevap": "Tak. Oferujemy darmowy transfer w obie strony z wielu hoteli w Side i okolicach. Ty korzystaj z wakacji, transport zostaw nam."
+        },
+        {
+          "soru": "Czy trzeba płacić z góry?",
+          "cevap": "Nie. Przy rezerwacji nie pobieramy zaliczek. Zapłacisz bezpiecznie w dniu wycieczki."
+        },
+        {
+          "soru": "Co jeśli będzie padać?",
+          "cevap": "Lekki deszcz zwykle nie przeszkadza. Jednak przy warunkach zagrażających bezpieczeństwu gości wycieczka może zostać przełożona."
+        },
+        {
+          "soru": "Czy Quad Safari jest dla mnie?",
+          "cevap": "Jeśli kochasz naturę, szukasz odrobiny przygody i chcesz przywieźć z wakacji niezapomniane wspomnienia — odpowiedź brzmi zdecydowanie tak. Wielu gości na koniec mówi: „Dobrze, że pojechaliśmy”. Dla nas to najlepsza recenzja. 😊"
+        },
+        {
+          "soru": "Dlaczego warto wybrać właśnie Was?",
+          "cevap": "Bo nie sprzedajemy po prostu wycieczki — pomagamy zebrać wspomnienia, o których będziesz opowiadać przez całe wakacje. Darmowy transfer, bez zaliczki, profesjonalni przewodnicy, bezpieczna organizacja i prawdziwa trasa off-road — Ty się baw, resztą zajmiemy się my."
+        }
+      ]
+    }
+  }
+}

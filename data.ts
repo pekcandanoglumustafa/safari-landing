@@ -1,58 +1,67 @@
-export const CONTACT = {
-  phoneDisplay: "0507 617 17 77",
-  phoneIntl: "+905076171777",
-  whatsapp: "https://wa.me/905076171777",
+import ayarlar from "@/content/ayarlar.json";
+import buggy from "@/content/paketler/buggy-safari.json";
+import quad from "@/content/paketler/quad-safari.json";
+import aile from "@/content/paketler/family-buggy-safari.json";
+import type { Locale } from "./i18n";
+
+type DilIcerik = {
+  ad: string; slogan: string; giris: string;
+  oneCikanlar: string[]; fiyataDahil: string[];
+  program: { baslik: string; aciklama: string }[];
+  bolumler: { baslik: string; paragraflar: string[] }[];
+  sss: { soru: string; cevap: string }[];
 };
-export const EUR_TRY = 54;
-export const toTL = (e: number) => (Math.round((e*EUR_TRY)/10)*10).toLocaleString("tr-TR");
+
+type PaketKaydi = {
+  slug: string; sira: number; fiyat: number; eskiFiyat?: number | null;
+  sure: string; kapak: string; galeri: string[];
+  diller: Partial<Record<Locale, DilIcerik>>;
+};
+
+const KAYITLAR = [buggy, quad, aile] as unknown as PaketKaydi[];
+
+/** İletişim bilgileri — CMS'ten yönetilir */
+export const CONTACT = {
+  phoneDisplay: ayarlar.phoneDisplay,
+  phoneIntl: ayarlar.phoneIntl,
+  whatsapp: `https://wa.me/${ayarlar.phoneIntl.replace(/\D/g, "")}`,
+};
+
+/** EUR → TL kuru — CMS'ten güncellenir */
+export const EUR_TRY = ayarlar.eurTry;
+export const toTL = (e: number) => (Math.round((e * EUR_TRY) / 10) * 10).toLocaleString("tr-TR");
 
 export type Pkg = {
   slug: string; name: string; tagline: string; price: number; oldPrice?: number;
-  duration: string; durKey: "dur2h" | "dur34h"; hero: string; gallery: string[];
+  durKey: "dur2h" | "dur34h"; hero: string; gallery: string[];
   intro: string; highlights: string[]; includes: string[];
-  program: { t: string; x: string }[]; faq: { q: string; a: string }[];
+  program: { t: string; x: string }[];
+  faq: { q: string; a: string }[];
+  sections: { h: string; p: string[] }[];
 };
 
-// SPOT görseller: çamurlu/aksiyon kareler öne
-export const PKGS: Pkg[] = [
-  {
-    slug: "buggy-safari",
-    name: "Buggy Safari",
-    tagline: "Kafesli buggy ile çamur, toz ve tam gaz adrenalin",
-    price: 22, oldPrice: 40, duration: "2 saat · Her gün", durKey: "dur2h",
-    hero: "/img/buggy-1.jpg",
-    gallery: ["/img/buggy-1.jpg","/img/buggy-2.jpg","/img/buggy-3.jpg","/img/buggy-4.jpg","/img/buggy-5.jpg","/img/buggy-6.jpg"],
-    intro: "Toros eteklerinde çift kişilik kafesli buggy ile 2 saatlik toz-çamur macerası. Dere yataklarından geçiyor, çamur havuzlarına dalıyor, tepelere tırmanıyorsun. Ehliyet gerekmez, kask ve tüm ekipman bizden. Kirlenme garantili!",
-    highlights: ["Çift kişilik kafesli buggy","Çamur havuzları ve dere geçişleri","2 saat dolu dolu parkur","Ehliyet gerekmez","Otelden ücretsiz alma-bırakma"],
-    includes: ["Otelden alma-bırakma","Buggy ve kask","Rehber eşliğinde parkur","Sigorta"],
-    program: [{t:"Alınış",x:"Otelinizden servis ile alınıyorsunuz"},{t:"Brifing",x:"Kısa güvenlik eğitimi ve ekipman"},{t:"Parkur",x:"2 saat çamur, toz, dere geçişleri"},{t:"Dönüş",x:"Yıkanma molası sonrası otele bırakış"}],
-    faq: [{q:"Ehliyet gerekiyor mu?",a:"Hayır, özel parkurda kullanıldığı için ehliyet gerekmez. 16 yaş üzeri tek başına sürebilir."},{q:"Kaç kişi biner?",a:"Standart buggy 2 kişiliktir; aileler için 4 kişilik Family Buggy seçeneğimiz var."},{q:"Islanır/kirlenir miyiz?",a:"Kesinlikle! Yedek kıyafet ve havlu getirin, kirlenmek bu turun en eğlenceli kısmı."}],
-  },
-  {
-    slug: "quad-safari",
-    name: "Quad Safari",
-    tagline: "Toz duman ATV ile 2 saatlik off-road macera",
-    price: 19, oldPrice: 30, duration: "2 saat · Her gün", durKey: "dur2h",
-    hero: "/img/quad-1.jpg",
-    gallery: ["/img/quad-1.jpg","/img/quad-2.jpg","/img/quad-3.jpg","/img/quad-4.jpg","/img/quad-5.jpg","/img/quad-6.jpg"],
-    intro: "Kendi quad'ını (ATV) sür, Toros manzaralı tepelere tırman, dere yataklarından toz ve su sıçratarak geç. Yaklaşık 2 saatlik parkurda adrenalin hiç düşmüyor. Ehliyet gerekmez, kask ve ekipman dahil.",
-    highlights: ["Kişiye özel quad (ATV)","Toz ve su sıçratan parkur","2 saat off-road macera","Ehliyet gerekmez","Otelden ücretsiz alma-bırakma"],
-    includes: ["Otelden alma-bırakma","Quad ve kask","Rehber eşliğinde parkur","Sigorta"],
-    program: [{t:"Alınış",x:"Otelinizden servis ile alınıyorsunuz"},{t:"Brifing",x:"Güvenlik eğitimi ve quad kullanımı"},{t:"Parkur",x:"2 saat tepeler, dere geçişleri, toz"},{t:"Dönüş",x:"Mola sonrası otele bırakış"}],
-    faq: [{q:"Tek başıma sürebilir miyim?",a:"16 yaş üzeri herkes tek başına sürebilir. Küçükler eğitmen/ebeveyn arkasında biner."},{q:"Deneyim gerekiyor mu?",a:"Hayır, başlangıç seviyesine uygun. Rehber baştan sona yanınızda."},{q:"Ne giymeliyim?",a:"Kirlenebilecek kıyafet, kapalı ayakkabı. Yedek kıyafet getirin."}],
-  },
-  {
-    slug: "family-buggy-safari",
-    name: "Family Buggy Safari",
-    tagline: "Tüm aile tek buggy'de — 4 kişilik güvenli macera",
-    price: 40, duration: "3-4 saat · Her gün", durKey: "dur34h",
-    hero: "/img/aile_buggy-1.jpg",
-    gallery: ["/img/aile_buggy-1.jpg","/img/aile_buggy-2.jpg","/img/aile_buggy-3.jpg","/img/aile_buggy-4.jpg","/img/aile_buggy-5.jpg","/img/aile_buggy-6.jpg"],
-    intro: "Ailece maceraya çıkmak isteyenler için 4 kişilik geniş kafesli buggy. Anne, baba ve çocuklar aynı araçta, güvenli kafes içinde çamur ve tozun tadını çıkarıyor. Fiyat araç başıdır — tüm aile tek ücrete dahil.",
-    highlights: ["4 kişilik tek araç","Aile başı sabit fiyat","Kafesli, güvenli tasarım","Çocuklar için uygun (6+ yaş)","Otelden ücretsiz alma-bırakma"],
-    includes: ["Otelden alma-bırakma","4 kişilik buggy","Kasklar","Rehberlik","Sigorta"],
-    program: [{t:"Alınış",x:"Ailecek otelinizden alınıyorsunuz"},{t:"Brifing",x:"Güvenlik eğitimi ve araç tanıtımı"},{t:"Parkur",x:"Aile temposunda çamur ve toz parkuru"},{t:"Dönüş",x:"Mola sonrası otele bırakış"}],
-    faq: [{q:"Fiyat kişi başı mı?",a:"Hayır, 40 € araç başıdır — 4 kişilik ailenin tamamı bu ücrete dahildir."},{q:"Çocuk yaş sınırı?",a:"Kafesli araç ve emniyet kemeriyle 6 yaş üzeri çocuklar rahatça katılabilir."},{q:"Kim kullanır?",a:"Ebeveyn kullanır, çocuklar yanında güvenle oturur. Kafes ve kemer tam koruma sağlar."}],
-  },
-];
-export const getPkg = (s: string) => PKGS.find(p => p.slug === s);
+/** Paketi istenen dilde getirir; çeviri yoksa Türkçeye düşer */
+export function paket(slug: string, locale: Locale = "tr"): Pkg | undefined {
+  const k = KAYITLAR.find((x) => x.slug === slug);
+  if (!k) return undefined;
+  const d = k.diller[locale] ?? k.diller.tr;
+  if (!d) return undefined;
+  return {
+    slug: k.slug, name: d.ad, tagline: d.slogan,
+    price: k.fiyat, oldPrice: k.eskiFiyat ?? undefined,
+    durKey: (k.sure as "dur2h" | "dur34h") ?? "dur2h",
+    hero: k.kapak, gallery: k.galeri, intro: d.giris,
+    highlights: d.oneCikanlar, includes: d.fiyataDahil,
+    program: d.program.map((x) => ({ t: x.baslik, x: x.aciklama })),
+    faq: d.sss.map((f) => ({ q: f.soru, a: f.cevap })),
+    sections: d.bolumler.map((s) => ({ h: s.baslik, p: s.paragraflar })),
+  };
+}
+
+export function paketler(locale: Locale = "tr"): Pkg[] {
+  return [...KAYITLAR].sort((a, b) => a.sira - b.sira).map((k) => paket(k.slug, locale)!).filter(Boolean);
+}
+
+export const SLUGS = KAYITLAR.map((k) => k.slug);
+export const PKGS = paketler("tr");
+export const getPkg = (s: string) => paket(s, "tr");

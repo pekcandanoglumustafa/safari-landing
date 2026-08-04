@@ -1,0 +1,83 @@
+backend:
+  name: github
+  repo: pekcandanoglumustafa/safari-landing
+  branch: main
+  base_url: https://sveltia-cms-auth.pekcandanoglumustafa.workers.dev
+
+publish_mode: simple
+media_folder: "public/img"
+public_folder: "/img"
+
+locale: tr
+
+collections:
+  # ───────── AYARLAR ─────────
+  - name: ayarlar
+    label: "⚙️ Genel Ayarlar"
+    files:
+      - name: iletisim
+        label: "İletişim ve Kur"
+        file: "content/ayarlar.json"
+        description: "Telefon numarası ve euro kuru. Kur değişince buradan güncelleyin, tüm site otomatik değişir."
+        fields:
+          - { name: phoneDisplay, label: "Telefon (görünen)", widget: string, hint: "Örn: 0507 617 17 77" }
+          - { name: phoneIntl, label: "Telefon (uluslararası)", widget: string, hint: "Örn: +905076171777 — WhatsApp bu numarayı kullanır" }
+          - { name: eurTry, label: "Euro kuru (TL)", widget: number, value_type: int, min: 1, hint: "1 Euro kaç TL? Fiyatların TL karşılığı buna göre hesaplanır." }
+
+  # ───────── PAKETLER ─────────
+  - name: paketler
+    label: "🏍️ Tur Paketleri"
+    label_singular: "Tur Paketi"
+    folder: "content/paketler"
+    extension: json
+    format: json
+    create: false
+    delete: false
+    identifier_field: slug
+    summary: "{{fields.diller.tr.ad}} — €{{fields.fiyat}}"
+    fields:
+      - { name: slug, label: "Adres kodu", widget: string, hint: "Değiştirmeyin — sayfa adresi buna bağlı." }
+      - { name: sira, label: "Sıra", widget: number, value_type: int, hint: "Ana sayfada kaçıncı sırada görünsün (0 = ilk)" }
+      - { name: fiyat, label: "Fiyat (€)", widget: number, value_type: int, min: 1 }
+      - { name: eskiFiyat, label: "Eski fiyat (€)", widget: number, value_type: int, required: false, hint: "Üstü çizili gösterilir. Boş bırakırsanız indirim görünmez." }
+      - name: sure
+        label: "Tur süresi"
+        widget: select
+        options:
+          - { label: "2 saat", value: "dur2h" }
+          - { label: "3-4 saat", value: "dur34h" }
+      - { name: kapak, label: "Kapak fotoğrafı", widget: image, hint: "Kartlarda ve sayfa başında görünen ana fotoğraf." }
+      - name: galeri
+        label: "Galeri fotoğrafları"
+        widget: list
+        field: { name: foto, label: "Fotoğraf", widget: image }
+        hint: "Tur sayfasındaki kaydırmalı galeri. İlk fotoğraf en önemlisi."
+
+      - name: diller
+        label: "Diller"
+        widget: object
+        collapsed: true
+        fields:
+          - { name: tr, label: "🇹🇷 Türkçe", widget: object, collapsed: true, fields: &dilAlanlari [
+              { name: ad, label: "Tur adı", widget: string },
+              { name: slogan, label: "Kısa slogan", widget: string, hint: "Kartın altında görünen tek cümle." },
+              { name: giris, label: "Giriş metni", widget: text, hint: "Galerinin altındaki ilk paragraf." },
+              { name: oneCikanlar, label: "Öne çıkanlar", widget: list, field: { name: madde, label: "Madde", widget: string } },
+              { name: fiyataDahil, label: "Fiyata dahil", widget: list, field: { name: madde, label: "Madde", widget: string } },
+              { name: program, label: "Tur akışı", widget: list, fields: [
+                  { name: baslik, label: "Adım", widget: string },
+                  { name: aciklama, label: "Açıklama", widget: string }
+                ] },
+              { name: bolumler, label: "Tanıtım bölümleri (SEO)", widget: list, collapsed: true, fields: [
+                  { name: baslik, label: "Başlık", widget: string },
+                  { name: paragraflar, label: "Paragraflar", widget: list, field: { name: p, label: "Paragraf", widget: text } }
+                ] },
+              { name: sss, label: "Sıkça sorulan sorular", widget: list, collapsed: true, fields: [
+                  { name: soru, label: "Soru", widget: string },
+                  { name: cevap, label: "Cevap", widget: text }
+                ] }
+            ] }
+          - { name: en, label: "🇬🇧 İngilizce", widget: object, collapsed: true, required: false, fields: *dilAlanlari }
+          - { name: de, label: "🇩🇪 Almanca", widget: object, collapsed: true, required: false, fields: *dilAlanlari }
+          - { name: ru, label: "🇷🇺 Rusça", widget: object, collapsed: true, required: false, fields: *dilAlanlari }
+          - { name: pl, label: "🇵🇱 Lehçe", widget: object, collapsed: true, required: false, fields: *dilAlanlari }
