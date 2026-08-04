@@ -72,6 +72,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'AW-11252315439');
+gtag('config', 'AW-11252315439/lcJKCKnSx9scEK_qwvUp', {
+  'phone_conversion_number': '+905076171777'
+});
 function gtag_report_conversion(url) {
   var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } };
   gtag('event', 'conversion', { 'send_to': 'AW-11252315439/XC2oCKSjrsoYEK_qwvUp', 'event_callback': callback });
