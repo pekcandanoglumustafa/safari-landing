@@ -47,7 +47,18 @@ export default function Gallery({ images, name, labels }: { images: string[]; na
             className={`absolute inset-0 cursor-zoom-in transition-opacity duration-700 ${i === idx ? "opacity-100" : "opacity-0"}`}
             tabIndex={i === idx ? 0 : -1}
           >
-            <Image src={src} alt={`${name} ${i + 1}`} fill sizes="100vw" className="object-cover" priority={i === 0} />
+            {(i === idx || i === (idx + 1) % n || i === (idx - 1 + n) % n) && (
+              <Image
+                src={src}
+                alt={`${name} ${i + 1}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 60vw"
+                quality={70}
+                className="object-cover"
+                priority={i === 0}
+                loading={i === 0 ? undefined : "lazy"}
+              />
+            )}
           </button>
         ))}
 
@@ -89,7 +100,7 @@ export default function Gallery({ images, name, labels }: { images: string[]; na
             aria-label={`${i + 1}`}
             className={`relative aspect-[4/3] w-24 shrink-0 overflow-hidden rounded-xl ring-2 transition ${i === idx ? "ring-orange" : "ring-transparent opacity-70 hover:opacity-100"}`}
           >
-            <Image src={src} alt="" fill sizes="96px" className="object-cover" />
+            <Image src={src} alt="" fill sizes="96px" quality={60} loading="lazy" className="object-cover" />
           </button>
         ))}
       </div>
@@ -115,7 +126,7 @@ export default function Gallery({ images, name, labels }: { images: string[]; na
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg>
           </button>
           <div className="relative h-[80vh] w-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
-            <Image src={images[idx]} alt={`${name} ${idx + 1}`} fill sizes="100vw" className="object-contain" />
+            <Image src={images[idx]} alt={`${name} ${idx + 1}`} fill sizes="100vw" quality={80} className="object-contain" />
           </div>
           <button
             onClick={(e) => { e.stopPropagation(); go(1); }}

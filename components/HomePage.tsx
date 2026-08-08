@@ -17,7 +17,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="absolute inset-0" aria-hidden>
-          <Image src="/img/buggy-1.jpg" alt="" fill priority sizes="100vw" quality={82} className="kb object-cover" />
+          <Image src="/img/buggy-1.jpg" alt="" fill priority sizes="100vw" quality={68} className="kb object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/60 to-navy/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-navy/20" />
         </div>
@@ -81,7 +81,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
             <Link key={p.slug} href={`${base}/tur/${p.slug}`}
               className="group relative block overflow-hidden rounded-3xl bg-navy shadow-lg ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl">
               <div className="relative aspect-[4/5]">
-                <Image src={p.hero} alt={p.name} fill sizes="(max-width:768px) 100vw, 33vw" className="card-img object-cover" />
+                <Image src={p.hero} alt={p.name} fill sizes="(max-width:768px) 100vw, 33vw" quality={65} loading="lazy" className="card-img object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-5 text-white">
                   <span className="mb-2 inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-semibold backdrop-blur">{t[p.durKey]}</span>
