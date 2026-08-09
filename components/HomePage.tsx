@@ -17,7 +17,16 @@ export default function HomePage({ locale }: { locale: Locale }) {
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="absolute inset-0" aria-hidden>
-          <Image src="/img/buggy-1.jpg" alt="" fill priority sizes="100vw" quality={68} className="kb object-cover" />
+          <picture>
+            <source media="(min-width: 768px)" srcSet="/img/hero-masaustu.jpg" />
+            <img
+              src="/img/hero-mobil.jpg"
+              alt=""
+              fetchPriority="high"
+              decoding="async"
+              className="kb absolute inset-0 h-full w-full object-cover"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/60 to-navy/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-navy/20" />
         </div>

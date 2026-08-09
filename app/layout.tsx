@@ -63,7 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr">
       <head>
-        <link rel="preload" as="image" href="/_next/image?url=%2Fimg%2Fbuggy-1.jpg&w=1200&q=68" fetchPriority="high" />
+        <link rel="preload" as="image" href="/img/hero-mobil.jpg" media="(max-width: 767px)" fetchPriority="high" />
+        <link rel="preload" as="image" href="/img/hero-masaustu.jpg" media="(min-width: 768px)" fetchPriority="high" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body className="min-h-screen antialiased pb-16 md:pb-0">
