@@ -68,7 +68,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body className="min-h-screen antialiased pb-16 md:pb-0">
-        <Analytics />{children}</body>
+        <Analytics />
+        <noscript>
+          <div>
+            <img src="https://mc.yandex.ru/watch/98714131" style={{ position: "absolute", left: "-9999px" }} alt="" />
+          </div>
+        </noscript>{children}</body>
     </html>
   );
 }
